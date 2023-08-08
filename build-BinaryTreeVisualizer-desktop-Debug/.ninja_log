@@ -1,0 +1,45 @@
+# ninja log v5
+22	1850	7130774148796120	BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+22	1850	7130774148796120	BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+1877	9388	7130774225628252	CMakeFiles/BinaryTreeVisualizer.dir/main.cpp.obj	77c3036e8ad6b42c
+22	1850	7130774148796120	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+1249	1353	7130455799058390	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/EWIEGA46WW/qrc_images.cpp	9c7a4ea6f353f9e2
+22	1850	7130774148796120	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+1855	7534	7130774206998079	CMakeFiles/BinaryTreeVisualizer.dir/binarytree.cpp.obj	9a160c674a7584a7
+1494	10593	7130747225402446	CMakeFiles/BinaryTreeVisualizer.dir/customdialog.cpp.obj	621b9d9926320764
+1861	9427	7130774226037160	CMakeFiles/BinaryTreeVisualizer.dir/binarytreewidget.cpp.obj	d8fdb0fd962e87c7
+1851	10294	7130774235142804	CMakeFiles/BinaryTreeVisualizer.dir/BinaryTreeVisualizer_autogen/mocs_compilation.cpp.obj	655fcfcec46ad1de
+1871	10504	7130774237237721	CMakeFiles/BinaryTreeVisualizer.dir/mainwindow.cpp.obj	4aa11a7590122108
+11873	12643	7130753741379851	BinaryTreeVisualizer.exe	72fea5374ab52d71
+1249	1353	7130455799058390	BinaryTreeVisualizer_autogen/EWIEGA46WW/qrc_images.cpp	9c7a4ea6f353f9e2
+1373	2193	7130455806984637	CMakeFiles/BinaryTreeVisualizer.dir/BinaryTreeVisualizer_autogen/EWIEGA46WW/qrc_images.cpp.obj	67f5cbc70187ca78
+1888	9110	7130774222915513	CMakeFiles/BinaryTreeVisualizer.dir/primero.cpp.obj	64f2a9af63651dd2
+1703	9234	7130753706501871	CMakeFiles/BinaryTreeVisualizer.dir/customdialog_copy.cpp.obj	76eab36f943b7329
+7535	11627	7130774248450059	CMakeFiles/BinaryTreeVisualizer.dir/searchdialog.cpp.obj	1efc4d3d7e0af551
+24	601	7130774609327920	BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+24	601	7130774609327920	BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+24	601	7130774609327920	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+24	601	7130774609327920	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+602	6442	7130774670843404	CMakeFiles/BinaryTreeVisualizer.dir/BinaryTreeVisualizer_autogen/mocs_compilation.cpp.obj	655fcfcec46ad1de
+16	395	7130774985782121	BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+16	395	7130774985782121	BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+16	395	7130774985782121	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+16	395	7130774985782121	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+413	4146	7130775023106283	CMakeFiles/BinaryTreeVisualizer.dir/mainwindow.cpp.obj	4aa11a7590122108
+4146	4705	7130775028808815	BinaryTreeVisualizer.exe	ebe34e664e4905fd
+21	1523	7130780513809331	BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+21	1523	7130780513809331	BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+21	1523	7130780513809331	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+21	1523	7130780513809331	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+1532	6245	7130780563795660	CMakeFiles/BinaryTreeVisualizer.dir/binarytreewidget.cpp.obj	d8fdb0fd962e87c7
+1538	6421	7130780565680619	CMakeFiles/BinaryTreeVisualizer.dir/main.cpp.obj	77c3036e8ad6b42c
+1524	7292	7130780574397306	CMakeFiles/BinaryTreeVisualizer.dir/BinaryTreeVisualizer_autogen/mocs_compilation.cpp.obj	655fcfcec46ad1de
+1543	7892	7130780580401585	CMakeFiles/BinaryTreeVisualizer.dir/mainwindow.cpp.obj	4aa11a7590122108
+7892	8578	7130780587342672	BinaryTreeVisualizer.exe	ebe34e664e4905fd
+20	489	7131418827285761	BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+20	489	7131418827285761	BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+20	489	7131418827285761	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/timestamp	30e5ebd465492ea5
+20	489	7131418827285761	C:/Users/aleja/OneDrive/Documents/Universidad/Estructura de datos 1/repo/BinaryTreeVisualizer/build-BinaryTreeVisualizer-desktop-Debug/BinaryTreeVisualizer_autogen/mocs_compilation.cpp	30e5ebd465492ea5
+528	5285	7131418875106911	CMakeFiles/BinaryTreeVisualizer.dir/searchdialog.cpp.obj	1efc4d3d7e0af551
+522	6818	7131418890468317	CMakeFiles/BinaryTreeVisualizer.dir/mainwindow.cpp.obj	4aa11a7590122108
+6819	7511	7131418897439301	BinaryTreeVisualizer.exe	ebe34e664e4905fd
