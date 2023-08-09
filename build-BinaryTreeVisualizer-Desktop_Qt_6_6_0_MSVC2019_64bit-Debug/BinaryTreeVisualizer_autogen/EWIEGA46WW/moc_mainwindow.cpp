@@ -42,18 +42,38 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "on_pushButton_3_clicked",
     "",
     "showCustomDialog",
-    "handleIntValueSelected",
-    "value"
+    "showCustomDialog2",
+    "showDeleteDialog",
+    "handleDeleteResult",
+    "pudo",
+    "handleIntValueSelectedHead",
+    "value",
+    "handleIntValueSelectedNode",
+    "handleSearchResult",
+    "found",
+    "on_pushButton_2_clicked",
+    "on_pushButton_clicked",
+    "on_pushButton_4_clicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[12];
+    uint offsetsAndSizes[32];
     char stringdata0[11];
     char stringdata1[24];
     char stringdata2[1];
     char stringdata3[17];
-    char stringdata4[23];
-    char stringdata5[6];
+    char stringdata4[18];
+    char stringdata5[17];
+    char stringdata6[19];
+    char stringdata7[5];
+    char stringdata8[27];
+    char stringdata9[6];
+    char stringdata10[27];
+    char stringdata11[19];
+    char stringdata12[6];
+    char stringdata13[24];
+    char stringdata14[22];
+    char stringdata15[24];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -63,15 +83,35 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(11, 23),  // "on_pushButton_3_clicked"
         QT_MOC_LITERAL(35, 0),  // ""
         QT_MOC_LITERAL(36, 16),  // "showCustomDialog"
-        QT_MOC_LITERAL(53, 22),  // "handleIntValueSelected"
-        QT_MOC_LITERAL(76, 5)   // "value"
+        QT_MOC_LITERAL(53, 17),  // "showCustomDialog2"
+        QT_MOC_LITERAL(71, 16),  // "showDeleteDialog"
+        QT_MOC_LITERAL(88, 18),  // "handleDeleteResult"
+        QT_MOC_LITERAL(107, 4),  // "pudo"
+        QT_MOC_LITERAL(112, 26),  // "handleIntValueSelectedHead"
+        QT_MOC_LITERAL(139, 5),  // "value"
+        QT_MOC_LITERAL(145, 26),  // "handleIntValueSelectedNode"
+        QT_MOC_LITERAL(172, 18),  // "handleSearchResult"
+        QT_MOC_LITERAL(191, 5),  // "found"
+        QT_MOC_LITERAL(197, 23),  // "on_pushButton_2_clicked"
+        QT_MOC_LITERAL(221, 21),  // "on_pushButton_clicked"
+        QT_MOC_LITERAL(243, 23)   // "on_pushButton_4_clicked"
     },
     "MainWindow",
     "on_pushButton_3_clicked",
     "",
     "showCustomDialog",
-    "handleIntValueSelected",
-    "value"
+    "showCustomDialog2",
+    "showDeleteDialog",
+    "handleDeleteResult",
+    "pudo",
+    "handleIntValueSelectedHead",
+    "value",
+    "handleIntValueSelectedNode",
+    "handleSearchResult",
+    "found",
+    "on_pushButton_2_clicked",
+    "on_pushButton_clicked",
+    "on_pushButton_4_clicked"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -83,7 +123,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -91,14 +131,30 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   32,    2, 0x08,    1 /* Private */,
-       3,    0,   33,    2, 0x08,    2 /* Private */,
-       4,    1,   34,    2, 0x08,    3 /* Private */,
+       1,    0,   80,    2, 0x08,    1 /* Private */,
+       3,    0,   81,    2, 0x08,    2 /* Private */,
+       4,    0,   82,    2, 0x08,    3 /* Private */,
+       5,    0,   83,    2, 0x08,    4 /* Private */,
+       6,    1,   84,    2, 0x08,    5 /* Private */,
+       8,    1,   87,    2, 0x08,    7 /* Private */,
+      10,    1,   90,    2, 0x08,    9 /* Private */,
+      11,    1,   93,    2, 0x08,   11 /* Private */,
+      13,    0,   96,    2, 0x08,   13 /* Private */,
+      14,    0,   97,    2, 0x08,   14 /* Private */,
+      15,    0,   98,    2, 0x08,   15 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,    5,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::Bool,    7,
+    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Bool,   12,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
 
        0        // eod
 };
@@ -116,9 +172,28 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'showCustomDialog'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'handleIntValueSelected'
+        // method 'showCustomDialog2'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        QtPrivate::TypeAndForceComplete<int, std::false_type>
+        // method 'showDeleteDialog'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'handleDeleteResult'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'handleIntValueSelectedHead'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'handleIntValueSelectedNode'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<int, std::false_type>,
+        // method 'handleSearchResult'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<bool, std::false_type>,
+        // method 'on_pushButton_2_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_4_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -131,7 +206,15 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_pushButton_3_clicked(); break;
         case 1: _t->showCustomDialog(); break;
-        case 2: _t->handleIntValueSelected((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 2: _t->showCustomDialog2(); break;
+        case 3: _t->showDeleteDialog(); break;
+        case 4: _t->handleDeleteResult((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 5: _t->handleIntValueSelectedHead((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 6: _t->handleIntValueSelectedNode((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
+        case 7: _t->handleSearchResult((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 8: _t->on_pushButton_2_clicked(); break;
+        case 9: _t->on_pushButton_clicked(); break;
+        case 10: _t->on_pushButton_4_clicked(); break;
         default: ;
         }
     }
@@ -156,13 +239,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 11)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 11;
     }
     return _id;
 }

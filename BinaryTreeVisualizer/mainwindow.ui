@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1579</width>
+    <height>1238</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>180</x>
       <y>40</y>
-      <width>581</width>
-      <height>511</height>
+      <width>1361</width>
+      <height>931</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="Visualizer"/>
@@ -50,7 +50,7 @@
       <rect>
        <x>10</x>
        <y>160</y>
-       <width>121</width>
+       <width>123</width>
        <height>291</height>
       </rect>
      </property>
@@ -156,8 +156,8 @@ border-color: rgb(240, 240, 240);</string>
      <rect>
       <x>190</x>
       <y>50</y>
-      <width>561</width>
-      <height>491</height>
+      <width>1341</width>
+      <height>911</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -181,8 +181,8 @@ border-color: rgb(240, 240, 240);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>22</height>
+     <width>1579</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

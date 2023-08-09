@@ -86,6 +86,42 @@ void BinaryTree::calculateNodePositions(TreeNode* node, int level, int posX, int
     calculateNodePositions(node->right, level + 1, rightX, nextY);
    // qDebug() << "Value inserted: ";
 }
+void BinaryTree::deleteValue(int value) {
+    deleteNode(root, value);
+}
+
+TreeNode* BinaryTree::deleteNode(TreeNode* currentNode, int value) {
+    if (!currentNode) return currentNode;
+
+    if (value < currentNode->data) {
+        currentNode->left = deleteNode(currentNode->left, value);
+    } else if (value > currentNode->data) {
+        currentNode->right = deleteNode(currentNode->right, value);
+    } else {
+        if (!currentNode->left) {
+            TreeNode* temp = currentNode->right;
+            delete currentNode;
+            return temp;
+        } else if (!currentNode->right) {
+            TreeNode* temp = currentNode->left;
+            delete currentNode;
+            return temp;
+        }
+
+        TreeNode* temp = minValueNode(currentNode->right);
+        currentNode->data = temp->data;
+        currentNode->right = deleteNode(currentNode->right, temp->data);
+    }
+
+    return currentNode;
+}
+TreeNode* BinaryTree::minValueNode(TreeNode* node) {
+    TreeNode* current = node;
+    while (current && current->left) {
+        current = current->left;
+    }
+    return current;
+}
 void BinaryTree::valueInserted(int value) {
 
    // emit valueInserted(value);

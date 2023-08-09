@@ -1,7 +1,5 @@
 <RCC>
     <qresource prefix="/">
         <file>otro - copia.png</file>
-        <file>../../../../../flecha - copia.png</file>
-        <file>../../../../../flecha2 - copia.png</file>
     </qresource>
 </RCC>

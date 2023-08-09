@@ -21,26 +21,32 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
-
+    bool Head =false;
+    BinaryTreeWidget* binaryTreeWidget;
 private slots:
 
 
     void on_pushButton_3_clicked();
     void showCustomDialog();
     void showCustomDialog2();
-    void handleIntValueSelected(int value);
+    void showDeleteDialog();
+    void handleDeleteResult(bool pudo);
+    void handleIntValueSelectedHead(int value);
+    void handleIntValueSelectedNode(int value);
+    void handleSearchResult(bool found);
 
     void on_pushButton_2_clicked();
 
     void on_pushButton_clicked();
 
+    void on_pushButton_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     BinaryTree* arbol;
-    BinaryTreeWidget* binaryTreeWidget;
+
     void showSearchDialog();
-    void handleSearchResult(bool found);
+
 
 };
 #endif // MAINWINDOW_H

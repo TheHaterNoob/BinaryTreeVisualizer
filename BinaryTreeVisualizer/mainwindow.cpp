@@ -14,6 +14,7 @@
 #include <QObject>
 #include <QTimer>
 #include "searchdialog.h"
+#include "deletedialog.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -50,13 +51,22 @@ void MainWindow::on_pushButton_3_clicked()
 
 }
 
-void MainWindow::showSearchDialog() {
+void MainWindow::showSearchDialog()
+{
     SearchDialog searchDialog(this);
     connect(&searchDialog, &SearchDialog::searchResult, this, &MainWindow::handleSearchResult);
     searchDialog.exec();
 }
 
+void MainWindow::showDeleteDialog()
+{
+    DeleteDialog deleteDialog(this);
+    connect(&deleteDialog, &DeleteDialog::deleteResult, this, &MainWindow::handleDeleteResult);
+    deleteDialog.exec();
+}
+
 void MainWindow::handleSearchResult(bool found) {
+
     if (found) {
         QMessageBox::information(this, "Search Result", "TRUE");
 
@@ -65,16 +75,29 @@ void MainWindow::handleSearchResult(bool found) {
     }
 }
 
+void MainWindow::handleDeleteResult(bool pudo) {
+    binaryTreeWidget->updateTree();
+
+    QTimer::singleShot(100, [this]() {
+        binaryTreeWidget->updateTree();
+    });
+}
+
 //funcion para mostrar el dialog
 void MainWindow::showCustomDialog()
 {
 
-    CustomDialog dialog(this);
+    if(!this->Head){
+        CustomDialog dialog(this);
 
-    //se conecta
-    connect(&dialog, &CustomDialog::intValueSelected, this, &MainWindow::handleIntValueSelected);
+        //se conecta
+        connect(&dialog, &CustomDialog::intValueSelected, this, &MainWindow::handleIntValueSelectedHead);
 
-    dialog.exec();
+        dialog.exec();
+        this->Head=true;
+    }else{
+                QMessageBox::information(this, "ERROR", "YA HAY HEAD");
+    }
 }
 
 void MainWindow::showCustomDialog2()
@@ -83,12 +106,12 @@ void MainWindow::showCustomDialog2()
     CustomDialog2 dialog(this);
 
     //se conecta
-    connect(&dialog, &CustomDialog2::intValueSelected, this, &MainWindow::handleIntValueSelected);
+    connect(&dialog, &CustomDialog2::intValueSelected, this, &MainWindow::handleIntValueSelectedNode);
 
     dialog.exec();
 }
 
-void MainWindow::handleIntValueSelected(int value) {
+void MainWindow::handleIntValueSelectedHead(int value) {
     binaryTreeWidget->binaryTree.insert(value);
     binaryTreeWidget->updateTree();
 
@@ -97,6 +120,14 @@ void MainWindow::handleIntValueSelected(int value) {
     });
 }
 
+void MainWindow::handleIntValueSelectedNode(int value) {
+    binaryTreeWidget->binaryTree.insert(value);
+    binaryTreeWidget->updateTree();
+
+    QTimer::singleShot(100, [this]() {
+        binaryTreeWidget->updateTree();
+    });
+}
 
 //nuevo planel
 void MainWindow::on_pushButton_2_clicked()
@@ -112,5 +143,11 @@ void MainWindow::on_pushButton_2_clicked()
 void MainWindow::on_pushButton_clicked()
 {
     showSearchDialog();
+}
+
+
+void MainWindow::on_pushButton_4_clicked()
+{
+ showDeleteDialog();
 }
 

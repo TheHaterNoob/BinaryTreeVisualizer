@@ -4,13 +4,14 @@
 #include <QDialog>
 #include <QLineEdit>
 #include <QPushButton>
+#include "mainwindow.h"
 
 class SearchDialog : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit SearchDialog(QWidget *parent = nullptr);
+    SearchDialog(MainWindow *mainWindow, QWidget *parent = nullptr);
 
 signals:
     void searchResult(bool found);
@@ -21,6 +22,7 @@ private slots:
 private:
     QLineEdit *searchLineEdit;
     QPushButton *searchButton;
+    MainWindow *mainWindowPtr;
 };
 
 #endif // SEARCHDIALOG_H

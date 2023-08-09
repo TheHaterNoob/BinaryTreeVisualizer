@@ -31,6 +31,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         customdialog_copy.cpp
         customdialog_copy.h
         searchdialog.h searchdialog.cpp
+        customdialog_copy.h searchdialog.h
+        deletedialog.h
+        deletedialog.cpp
 
 
     )

@@ -1,11 +1,12 @@
 #include "searchdialog.h"
 #include "qboxlayout.h"
+#include "mainwindow.h"
 
-SearchDialog::SearchDialog(QWidget *parent) : QDialog(parent)
+SearchDialog::SearchDialog(MainWindow *mainWindow, QWidget *parent) : QDialog(parent)
 {
     setWindowTitle("Search Node");
     resize(300, 100);
-
+    mainWindowPtr = mainWindow;
     searchLineEdit = new QLineEdit(this);
     searchButton = new QPushButton("Search", this);
 
@@ -14,12 +15,13 @@ SearchDialog::SearchDialog(QWidget *parent) : QDialog(parent)
     layout->addWidget(searchButton);
 
     connect(searchButton, &QPushButton::clicked, this, &SearchDialog::searchButtonClicked);
+
 }
 
 void SearchDialog::searchButtonClicked()
 {
-    bool found = false;
     int searchValue = searchLineEdit->text().toInt();
-
-    emit searchResult(found);
+    bool exist = mainWindowPtr->binaryTreeWidget->binaryTree.search(searchValue);
+    emit searchResult(exist);
+    this->close();
 }

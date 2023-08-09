@@ -16,7 +16,6 @@ BinaryTreeWidget::BinaryTreeWidget(QWidget* parent) : QWidget(parent) {
     view = new QGraphicsView(scene, this);
     view->setRenderHint(QPainter::Antialiasing);
     binaryTree.create();
-    binaryTree.insert(0);
     binaryTree.calculateNodePositions(binaryTree.getRoot(), 0, 600, 50);
 
     drawTree(scene, binaryTree.getRoot(), nullptr);

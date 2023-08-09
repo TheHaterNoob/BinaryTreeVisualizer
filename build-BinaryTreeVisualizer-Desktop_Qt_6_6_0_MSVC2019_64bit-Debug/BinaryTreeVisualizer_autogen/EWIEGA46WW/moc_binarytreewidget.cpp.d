@@ -142,11 +142,14 @@ C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_M
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsView \
+  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QWidget \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qabstractscrollarea.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qframe.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgraphicsscene.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgraphicsview.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qscrollarea.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \

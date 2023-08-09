@@ -19,6 +19,7 @@ public:
     void insert(int value);
     TreeNode* getRoot() const;
     void calculateNodePositions(TreeNode* node, int level, int posX, int posY);
+    void deleteValue(int value);
 signals:
    void valueInserted(int value);
 private:
@@ -28,7 +29,8 @@ private:
     TreeNode* createNode(int value);
     void insertNode(TreeNode* currentNode, TreeNode* newNode);
     bool searchNode(TreeNode* currentNode, int value) const;
-
+    TreeNode* deleteNode(TreeNode* currentNode, int value);
+    TreeNode* minValueNode(TreeNode* node);
 };
 
 #endif // BINARYTREE_H

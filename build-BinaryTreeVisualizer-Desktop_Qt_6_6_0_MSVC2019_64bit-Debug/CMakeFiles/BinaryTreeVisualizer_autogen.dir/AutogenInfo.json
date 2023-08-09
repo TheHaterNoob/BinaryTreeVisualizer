@@ -311,7 +311,8 @@
 		"C:/Qt/6.6.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-debug.cmake",
 		"C:/Qt/6.6.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-relwithdebinfo.cmake",
 		"C:/Qt/6.6.0/msvc2019_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/GNUInstallDirs.cmake"
+		"C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/GNUInstallDirs.cmake",
+		"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/images.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer",
 	"DEP_FILE" : "C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/BinaryTreeVisualizer_autogen/deps",
@@ -337,9 +338,27 @@
 			null
 		],
 		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/customdialog_copy.h",
+			"MU",
+			"EWIEGA46WW/moc_customdialog_copy.cpp",
+			null
+		],
+		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/deletedialog.h",
+			"MU",
+			"EWIEGA46WW/moc_deletedialog.cpp",
+			null
+		],
+		[
 			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/searchdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_searchdialog.cpp",
 			null
 		]
 	],
@@ -413,12 +432,27 @@
 			null
 		],
 		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/customdialog_copy.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/deletedialog.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/main.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/searchdialog.cpp",
 			"MU",
 			null
 		]
