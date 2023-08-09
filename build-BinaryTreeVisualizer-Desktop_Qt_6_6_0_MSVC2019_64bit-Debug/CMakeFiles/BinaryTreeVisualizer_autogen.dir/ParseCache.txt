@@ -1046,12 +1046,12 @@ C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/searchdialog.h
  mdp:C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytree.h
  mdp:C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytreewidget.h
  mdp:C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.h
-C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytreewidget.cpp
-C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytree.cpp
+C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/customdialog_copy.cpp
 C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.cpp
  uic:./ui_mainwindow.h
-C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/customdialog_copy.cpp
-C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/deletedialog.cpp
+C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytree.cpp
+C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytreewidget.cpp
 C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/customdialog.cpp
+C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/deletedialog.cpp
 C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/main.cpp
 C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/searchdialog.cpp

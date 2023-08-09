@@ -81,6 +81,9 @@ void MainWindow::handleDeleteResult(bool pudo) {
     QTimer::singleShot(100, [this]() {
         binaryTreeWidget->updateTree();
     });
+    if(binaryTreeWidget->binaryTree.getRoot()==nullptr){
+        this->Head=false;
+    }
 }
 
 //funcion para mostrar el dialog
@@ -94,7 +97,7 @@ void MainWindow::showCustomDialog()
         connect(&dialog, &CustomDialog::intValueSelected, this, &MainWindow::handleIntValueSelectedHead);
 
         dialog.exec();
-        this->Head=true;
+
     }else{
                 QMessageBox::information(this, "ERROR", "YA HAY HEAD");
     }
@@ -102,6 +105,8 @@ void MainWindow::showCustomDialog()
 
 void MainWindow::showCustomDialog2()
 {
+    if(this->Head){
+
 
     CustomDialog2 dialog(this);
 
@@ -109,12 +114,15 @@ void MainWindow::showCustomDialog2()
     connect(&dialog, &CustomDialog2::intValueSelected, this, &MainWindow::handleIntValueSelectedNode);
 
     dialog.exec();
+    }else{
+    QMessageBox::information(this, "ERROR", "NO HAY HEAD");
+    }
 }
 
 void MainWindow::handleIntValueSelectedHead(int value) {
     binaryTreeWidget->binaryTree.insert(value);
     binaryTreeWidget->updateTree();
-
+    this->Head=true;
     QTimer::singleShot(100, [this]() {
         binaryTreeWidget->updateTree();
     });

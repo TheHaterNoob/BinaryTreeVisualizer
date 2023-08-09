@@ -87,7 +87,7 @@ void BinaryTree::calculateNodePositions(TreeNode* node, int level, int posX, int
    // qDebug() << "Value inserted: ";
 }
 void BinaryTree::deleteValue(int value) {
-    deleteNode(root, value);
+    root = deleteNode(root, value);
 }
 
 TreeNode* BinaryTree::deleteNode(TreeNode* currentNode, int value) {
