@@ -20,8 +20,7 @@ public:
     TreeNode* getRoot() const;
     void calculateNodePositions(TreeNode* node, int level, int posX, int posY);
     void deleteValue(int value);
-signals:
-   void valueInserted(int value);
+
 private:
     TreeNode* root;
 

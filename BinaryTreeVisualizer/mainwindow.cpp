@@ -22,7 +22,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 
 {
-   // ui->frame->setStyleSheet("background-color: rgb(255,255,255)");
 
     ui->setupUi(this);
     setMinimumSize(
@@ -141,10 +140,6 @@ void MainWindow::handleIntValueSelectedNode(int value) {
 void MainWindow::on_pushButton_2_clicked()
 {
     showCustomDialog2();
-    /*primero* pr = new primero(this);
-    pr->setModal(true);
-    pr->exec();
-*/
 }
 
 
