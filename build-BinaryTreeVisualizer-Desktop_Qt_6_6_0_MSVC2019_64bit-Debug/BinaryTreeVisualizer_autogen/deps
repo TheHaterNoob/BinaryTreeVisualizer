@@ -6,6 +6,7 @@ BinaryTreeVisualizer_autogen/timestamp: \
 	C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20memory.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20type_traits.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtCore/q23utility.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtCore/qabstractitemmodel.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtCore/qalgorithms.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtCore/qanystringview.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtCore/qarraydata.h \
@@ -157,6 +158,7 @@ BinaryTreeVisualizer_autogen/timestamp: \
 	C:/Qt/6.6.0/msvc2019_64/include/QtGui/qvalidator.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtGui/qwindowdefs.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QComboBox \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QDialog \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QFileDialog \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsScene \
@@ -171,9 +173,12 @@ BinaryTreeVisualizer_autogen/timestamp: \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QVBoxLayout \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QWidget \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qabstractbutton.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qabstractitemdelegate.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qabstractscrollarea.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qabstractslider.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qabstractspinbox.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qboxlayout.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qcombobox.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qdialog.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qfiledialog.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qframe.h \
@@ -187,9 +192,14 @@ BinaryTreeVisualizer_autogen/timestamp: \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qmessagebox.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qpushbutton.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qradiobutton.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qrubberband.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qscrollarea.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qsizepolicy.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qslider.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qspinbox.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qstyle.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qstyleoption.h \
+	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qtabbar.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qtabwidget.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
 	C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qtwidgetsexports.h \
@@ -430,6 +440,8 @@ BinaryTreeVisualizer_autogen/timestamp: \
 	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/main.cpp \
 	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.cpp \
 	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.h \
+	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/menu.cpp \
+	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/menu.h \
 	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/searchdialog.cpp \
 	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/searchdialog.h \
 	C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/.qtc/package-manager/auto-setup.cmake \
@@ -437,4 +449,5 @@ BinaryTreeVisualizer_autogen/timestamp: \
 	C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeRCCompiler.cmake \
 	C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CMakeSystem.cmake \
 	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.ui \
+	C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/menu.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe

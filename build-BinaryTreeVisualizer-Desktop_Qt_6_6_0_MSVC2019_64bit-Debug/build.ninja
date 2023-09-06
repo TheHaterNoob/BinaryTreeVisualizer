@@ -130,6 +130,15 @@ build CMakeFiles\BinaryTreeVisualizer.dir\deletedialog.cpp.obj: CXX_COMPILER__Bi
   TARGET_COMPILE_PDB = CMakeFiles\BinaryTreeVisualizer.dir\
   TARGET_PDB = BinaryTreeVisualizer.pdb
 
+build CMakeFiles\BinaryTreeVisualizer.dir\menu.cpp.obj: CXX_COMPILER__BinaryTreeVisualizer_Debug C$:\Users\alex1\Documents\LeProject\BinaryTreeVisualizer\menu.cpp || cmake_object_order_depends_target_BinaryTreeVisualizer
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zc:__cplusplus -permissive- -utf-8 -std:c++17
+  INCLUDES = -IC:\Users\alex1\Documents\LeProject\build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug\BinaryTreeVisualizer_autogen\include -external:IC:\Qt\6.6.0\msvc2019_64\include\QtCore -external:IC:\Qt\6.6.0\msvc2019_64\include -external:IC:\Qt\6.6.0\msvc2019_64\mkspecs\win32-msvc -external:IC:\Qt\6.6.0\msvc2019_64\include\QtWidgets -external:IC:\Qt\6.6.0\msvc2019_64\include\QtGui -external:W0
+  OBJECT_DIR = CMakeFiles\BinaryTreeVisualizer.dir
+  OBJECT_FILE_DIR = CMakeFiles\BinaryTreeVisualizer.dir
+  TARGET_COMPILE_PDB = CMakeFiles\BinaryTreeVisualizer.dir\
+  TARGET_PDB = BinaryTreeVisualizer.pdb
+
 build CMakeFiles\BinaryTreeVisualizer.dir\BinaryTreeVisualizer_autogen\EWIEGA46WW\qrc_images.cpp.obj: CXX_COMPILER__BinaryTreeVisualizer_Debug C$:\Users\alex1\Documents\LeProject\build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug\BinaryTreeVisualizer_autogen\EWIEGA46WW\qrc_images.cpp || cmake_object_order_depends_target_BinaryTreeVisualizer
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -Zc:__cplusplus -permissive- -utf-8 -std:c++17
@@ -147,7 +156,7 @@ build CMakeFiles\BinaryTreeVisualizer.dir\BinaryTreeVisualizer_autogen\EWIEGA46W
 #############################################
 # Link the executable BinaryTreeVisualizer.exe
 
-build BinaryTreeVisualizer.exe: CXX_EXECUTABLE_LINKER__BinaryTreeVisualizer_Debug CMakeFiles\BinaryTreeVisualizer.dir\BinaryTreeVisualizer_autogen\mocs_compilation.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\main.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\mainwindow.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\binarytree.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\binarytreewidget.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\customdialog.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\customdialog_copy.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\searchdialog.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\deletedialog.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\BinaryTreeVisualizer_autogen\EWIEGA46WW\qrc_images.cpp.obj | C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Widgetsd.lib C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Guid.lib C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.6.0\msvc2019_64\lib\Qt6EntryPointd.lib || BinaryTreeVisualizer_autogen BinaryTreeVisualizer_autogen_timestamp_deps
+build BinaryTreeVisualizer.exe: CXX_EXECUTABLE_LINKER__BinaryTreeVisualizer_Debug CMakeFiles\BinaryTreeVisualizer.dir\BinaryTreeVisualizer_autogen\mocs_compilation.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\main.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\mainwindow.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\binarytree.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\binarytreewidget.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\customdialog.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\customdialog_copy.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\searchdialog.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\deletedialog.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\menu.cpp.obj CMakeFiles\BinaryTreeVisualizer.dir\BinaryTreeVisualizer_autogen\EWIEGA46WW\qrc_images.cpp.obj | C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Widgetsd.lib C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Guid.lib C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.6.0\msvc2019_64\lib\Qt6EntryPointd.lib || BinaryTreeVisualizer_autogen BinaryTreeVisualizer_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:windows
   LINK_LIBRARIES = C:\Qt\6.6.0\msvc2019_64\lib\Qt6Widgetsd.lib  C:\Qt\6.6.0\msvc2019_64\lib\Qt6Guid.lib  C:\Qt\6.6.0\msvc2019_64\lib\Qt6Cored.lib  mpr.lib  userenv.lib  C:\Qt\6.6.0\msvc2019_64\lib\Qt6EntryPointd.lib  shell32.lib  d3d11.lib  dxgi.lib  dxguid.lib  d3d12.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -223,7 +232,7 @@ build BinaryTreeVisualizer_autogen_timestamp_deps: phony CMakeFiles\BinaryTreeVi
 #############################################
 # Utility command for BinaryTreeVisualizer_autogen
 
-build BinaryTreeVisualizer_autogen: phony CMakeFiles\BinaryTreeVisualizer_autogen BinaryTreeVisualizer_autogen\include\ui_mainwindow.h BinaryTreeVisualizer_autogen\timestamp BinaryTreeVisualizer_autogen\mocs_compilation.cpp BinaryTreeVisualizer_autogen_timestamp_deps
+build BinaryTreeVisualizer_autogen: phony CMakeFiles\BinaryTreeVisualizer_autogen BinaryTreeVisualizer_autogen\include\ui_mainwindow.h BinaryTreeVisualizer_autogen\include\ui_menu.h BinaryTreeVisualizer_autogen\timestamp BinaryTreeVisualizer_autogen\mocs_compilation.cpp BinaryTreeVisualizer_autogen_timestamp_deps
 
 
 #############################################
@@ -248,13 +257,13 @@ build BinaryTreeVisualizer_autogen\EWIEGA46WW\qrc_images.cpp | ${cmake_ninja_wor
 #############################################
 # Phony custom command for CMakeFiles\BinaryTreeVisualizer_autogen_timestamp_deps
 
-build CMakeFiles\BinaryTreeVisualizer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\BinaryTreeVisualizer_autogen_timestamp_deps: phony C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.6.0\msvc2019_64\.\bin\uic.exe C$:\Qt\6.6.0\msvc2019_64\.\bin\moc.exe C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Widgetsd.lib
+build CMakeFiles\BinaryTreeVisualizer_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\BinaryTreeVisualizer_autogen_timestamp_deps: phony C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Cored.lib C$:\Qt\6.6.0\msvc2019_64\.\bin\moc.exe C$:\Qt\6.6.0\msvc2019_64\.\bin\uic.exe C$:\Qt\6.6.0\msvc2019_64\lib\Qt6Widgetsd.lib
 
 
 #############################################
 # Phony custom command for CMakeFiles\BinaryTreeVisualizer_autogen
 
-build CMakeFiles\BinaryTreeVisualizer_autogen BinaryTreeVisualizer_autogen\include\ui_mainwindow.h | ${cmake_ninja_workdir}CMakeFiles\BinaryTreeVisualizer_autogen ${cmake_ninja_workdir}BinaryTreeVisualizer_autogen\include\ui_mainwindow.h: phony BinaryTreeVisualizer_autogen\timestamp || BinaryTreeVisualizer_autogen_timestamp_deps
+build CMakeFiles\BinaryTreeVisualizer_autogen BinaryTreeVisualizer_autogen\include\ui_mainwindow.h BinaryTreeVisualizer_autogen\include\ui_menu.h | ${cmake_ninja_workdir}CMakeFiles\BinaryTreeVisualizer_autogen ${cmake_ninja_workdir}BinaryTreeVisualizer_autogen\include\ui_mainwindow.h ${cmake_ninja_workdir}BinaryTreeVisualizer_autogen\include\ui_menu.h: phony BinaryTreeVisualizer_autogen\timestamp || BinaryTreeVisualizer_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

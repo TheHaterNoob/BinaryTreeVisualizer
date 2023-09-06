@@ -27,6 +27,11 @@ class Ui_MainWindow
 {
 public:
     QAction *actionYEP;
+    QAction *actionAbrir_Arbol;
+    QAction *actionConvert_to_Binary_disorder;
+    QAction *actionConvert_to_BST;
+    QAction *actionConvert_to_AVL;
+    QAction *actionTwilight_Sparkle;
     QWidget *centralwidget;
     QWidget *verticalLayoutWidget_2;
     QVBoxLayout *Visualizer;
@@ -37,6 +42,9 @@ public:
     QPushButton *pushButton_2;
     QPushButton *pushButton_4;
     QPushButton *pushButton;
+    QPushButton *Guardar;
+    QPushButton *openButton;
+    QPushButton *limpiar;
     QLabel *label;
     QFrame *frame_2;
     QMenuBar *menubar;
@@ -54,6 +62,18 @@ public:
         MainWindow->resize(1579, 1238);
         actionYEP = new QAction(MainWindow);
         actionYEP->setObjectName("actionYEP");
+        actionAbrir_Arbol = new QAction(MainWindow);
+        actionAbrir_Arbol->setObjectName("actionAbrir_Arbol");
+        actionConvert_to_Binary_disorder = new QAction(MainWindow);
+        actionConvert_to_Binary_disorder->setObjectName("actionConvert_to_Binary_disorder");
+        actionConvert_to_BST = new QAction(MainWindow);
+        actionConvert_to_BST->setObjectName("actionConvert_to_BST");
+        actionConvert_to_AVL = new QAction(MainWindow);
+        actionConvert_to_AVL->setObjectName("actionConvert_to_AVL");
+        actionTwilight_Sparkle = new QAction(MainWindow);
+        actionTwilight_Sparkle->setObjectName("actionTwilight_Sparkle");
+        actionTwilight_Sparkle->setCheckable(true);
+        actionTwilight_Sparkle->setChecked(false);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         verticalLayoutWidget_2 = new QWidget(centralwidget);
@@ -64,7 +84,7 @@ public:
         Visualizer->setContentsMargins(0, 0, 0, 0);
         frame = new QFrame(centralwidget);
         frame->setObjectName("frame");
-        frame->setGeometry(QRect(20, 50, 141, 491));
+        frame->setGeometry(QRect(20, 50, 141, 711));
         frame->setStyleSheet(QString::fromUtf8("QFrame{\n"
 " border: 2px solid black;\n"
 "}"));
@@ -72,7 +92,7 @@ public:
         frame->setFrameShadow(QFrame::Raised);
         verticalLayoutWidget = new QWidget(frame);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(10, 160, 123, 291));
+        verticalLayoutWidget->setGeometry(QRect(10, 160, 123, 531));
         Y = new QVBoxLayout(verticalLayoutWidget);
         Y->setObjectName("Y");
         Y->setContentsMargins(0, 0, 0, 0);
@@ -119,6 +139,36 @@ public:
 
         Y->addWidget(pushButton);
 
+        Guardar = new QPushButton(verticalLayoutWidget);
+        Guardar->setObjectName("Guardar");
+        Guardar->setFont(font);
+        Guardar->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background-color: rgb(119, 193, 75);\n"
+"}"));
+
+        Y->addWidget(Guardar);
+
+        openButton = new QPushButton(verticalLayoutWidget);
+        openButton->setObjectName("openButton");
+        QFont font1;
+        font1.setFamilies({QString::fromUtf8("Tw Cen MT Condensed Extra Bold")});
+        font1.setPointSize(12);
+        openButton->setFont(font1);
+        openButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background-color: rgb(119, 193, 75);\n"
+"}"));
+
+        Y->addWidget(openButton);
+
+        limpiar = new QPushButton(verticalLayoutWidget);
+        limpiar->setObjectName("limpiar");
+        limpiar->setFont(font1);
+        limpiar->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background-color: rgb(119, 193, 75);\n"
+"}"));
+
+        Y->addWidget(limpiar);
+
         label = new QLabel(frame);
         label->setObjectName("label");
         label->setGeometry(QRect(10, 30, 121, 121));
@@ -160,6 +210,11 @@ public:
         menubar->addAction(menuWindow->menuAction());
         menubar->addAction(menuHelp->menuAction());
         menuFile->addAction(actionYEP);
+        menuFile->addAction(actionAbrir_Arbol);
+        menuTools->addAction(actionConvert_to_Binary_disorder);
+        menuTools->addAction(actionConvert_to_BST);
+        menuTools->addAction(actionConvert_to_AVL);
+        menuWindow->addAction(actionTwilight_Sparkle);
 
         retranslateUi(MainWindow);
 
@@ -169,11 +224,19 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "BinaryTree", nullptr));
-        actionYEP->setText(QCoreApplication::translate("MainWindow", "YEP", nullptr));
+        actionYEP->setText(QCoreApplication::translate("MainWindow", "Guardar Arbol", nullptr));
+        actionAbrir_Arbol->setText(QCoreApplication::translate("MainWindow", "Abrir Arbol", nullptr));
+        actionConvert_to_Binary_disorder->setText(QCoreApplication::translate("MainWindow", "Convert to Binary (disorder)", nullptr));
+        actionConvert_to_BST->setText(QCoreApplication::translate("MainWindow", "Convert to BST", nullptr));
+        actionConvert_to_AVL->setText(QCoreApplication::translate("MainWindow", "Convert to AVL", nullptr));
+        actionTwilight_Sparkle->setText(QCoreApplication::translate("MainWindow", "Twilight Sparkle", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Create Head", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "Crear Nodo Hoja", nullptr));
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "Eliminar Nodo", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Buscar Elemento", nullptr));
+        Guardar->setText(QCoreApplication::translate("MainWindow", "Guardar Arbol", nullptr));
+        openButton->setText(QCoreApplication::translate("MainWindow", "Abrir Arbol", nullptr));
+        limpiar->setText(QCoreApplication::translate("MainWindow", "Limpiar Pantalla", nullptr));
         label->setText(QString());
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));

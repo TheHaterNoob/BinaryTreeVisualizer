@@ -20,7 +20,7 @@ DeleteDialog::DeleteDialog(MainWindow *mainWindow, QWidget *parent) : QDialog(pa
 void DeleteDialog::deleteButtonClicked()
 {
     int deleteValue2 = deleteLineEdit->text().toInt();
-    mainWindowPtr->binaryTreeWidget->binaryTree.deleteValue(deleteValue2);
+    mainWindowPtr->binaryTreeWidget->binaryTree.deleteNodeDefault(deleteValue2);
     bool pudo=true;
     emit deleteResult(pudo);
     this->close();

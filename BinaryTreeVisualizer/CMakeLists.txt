@@ -34,6 +34,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         customdialog_copy.h searchdialog.h
         deletedialog.h
         deletedialog.cpp
+        menu.h menu.cpp menu.ui
 
 
     )

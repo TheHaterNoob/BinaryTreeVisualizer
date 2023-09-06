@@ -14,14 +14,15 @@ class BinaryTreeWidget : public QWidget {
 public:
     BinaryTreeWidget(QWidget* parent = nullptr);
     void updateTree();
-
+    void clearTree();
+    void updateTreeUnicorn();
     BinaryTree binaryTree;
 void setRoot(TreeNode* root);
+        QTimer *colorTimer;
 private:
     TreeNode* root;
-
+    void drawTreeUnicorn(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse);
     void drawTree(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse);
-
     QGraphicsScene* scene;
     QGraphicsView* view;
 

@@ -21,7 +21,7 @@ SearchDialog::SearchDialog(MainWindow *mainWindow, QWidget *parent) : QDialog(pa
 void SearchDialog::searchButtonClicked()
 {
     int searchValue = searchLineEdit->text().toInt();
-    bool exist = mainWindowPtr->binaryTreeWidget->binaryTree.search(searchValue);
+    bool exist = mainWindowPtr->binaryTreeWidget->binaryTree.searchNodeNormal(mainWindowPtr->binaryTreeWidget->binaryTree.getRoot(),searchValue);
     emit searchResult(exist);
     this->close();
 }

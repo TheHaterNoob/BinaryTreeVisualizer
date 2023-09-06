@@ -9,6 +9,10 @@
 #include <QObject>
 #include "binarytreewidget.h"
 #include "binarytree.h"
+#include "qcombobox.h"
+#include <fstream>
+#include <sstream>
+#include <string>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,6 +27,7 @@ public:
     ~MainWindow();
     bool Head =false;
     BinaryTreeWidget* binaryTreeWidget;
+    char type = 'n';
 private slots:
 
 
@@ -32,8 +37,11 @@ private slots:
     void showDeleteDialog();
     void handleDeleteResult(bool pudo);
     void handleIntValueSelectedHead(int value);
+    void handleIntValueSelectedNode2(int value, TreeNode* parentNode, bool isLeftChild);
     void handleIntValueSelectedNode(int value);
+    void updateTreeBasedOnUnicornio();
     void handleSearchResult(bool found);
+    void fillParentComboBox(QComboBox* comboBox, TreeNode* node, QString prefix);
 
     void on_pushButton_2_clicked();
 
@@ -41,11 +49,34 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_Guardar_clicked();
+
+    void on_actionYEP_triggered();
+
+    void on_actionAbrir_Arbol_triggered();
+
+    void on_pushButton_5_clicked();
+
+    void on_openButton_clicked();
+
+    void on_limpiar_clicked();
+
+    void on_actionConvert_to_BST_triggered();
+
+    void on_actionConvert_to_Binary_disorder_triggered();
+
+    void on_actionConvert_to_AVL_triggered();
+
+
+    void on_actionTwilight_Sparkle_triggered();
+
 private:
     Ui::MainWindow *ui;
     BinaryTree* arbol;
-
+    bool Unicornio=false;
     void showSearchDialog();
+    void saveTreeToFile(TreeNode* node, std::ofstream& outFile);
+
 
 
 };

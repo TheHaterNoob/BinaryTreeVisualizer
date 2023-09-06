@@ -31,7 +31,7 @@
       <x>20</x>
       <y>50</y>
       <width>141</width>
-      <height>491</height>
+      <height>711</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -51,7 +51,7 @@
        <x>10</x>
        <y>160</y>
        <width>123</width>
-       <height>291</height>
+       <height>531</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="Y">
@@ -131,6 +131,60 @@
         </property>
        </widget>
       </item>
+      <item>
+       <widget class="QPushButton" name="Guardar">
+        <property name="font">
+         <font>
+          <family>Tw Cen MT Condensed Extra Bold</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(119, 193, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Guardar Arbol</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openButton">
+        <property name="font">
+         <font>
+          <family>Tw Cen MT Condensed Extra Bold</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(119, 193, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Abrir Arbol</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="limpiar">
+        <property name="font">
+         <font>
+          <family>Tw Cen MT Condensed Extra Bold</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(119, 193, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Limpiar Pantalla</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </widget>
     <widget class="QLabel" name="label">
@@ -190,6 +244,7 @@ border-color: rgb(240, 240, 240);</string>
      <string>File</string>
     </property>
     <addaction name="actionYEP"/>
+    <addaction name="actionAbrir_Arbol"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -205,11 +260,15 @@ border-color: rgb(240, 240, 240);</string>
     <property name="title">
      <string>Tools</string>
     </property>
+    <addaction name="actionConvert_to_Binary_disorder"/>
+    <addaction name="actionConvert_to_BST"/>
+    <addaction name="actionConvert_to_AVL"/>
    </widget>
    <widget class="QMenu" name="menuWindow">
     <property name="title">
      <string>Window</string>
     </property>
+    <addaction name="actionTwilight_Sparkle"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -225,7 +284,38 @@ border-color: rgb(240, 240, 240);</string>
   </widget>
   <action name="actionYEP">
    <property name="text">
-    <string>YEP</string>
+    <string>Guardar Arbol</string>
+   </property>
+  </action>
+  <action name="actionAbrir_Arbol">
+   <property name="text">
+    <string>Abrir Arbol</string>
+   </property>
+  </action>
+  <action name="actionConvert_to_Binary_disorder">
+   <property name="text">
+    <string>Convert to Binary (disorder)</string>
+   </property>
+  </action>
+  <action name="actionConvert_to_BST">
+   <property name="text">
+    <string>Convert to BST</string>
+   </property>
+  </action>
+  <action name="actionConvert_to_AVL">
+   <property name="text">
+    <string>Convert to AVL</string>
+   </property>
+  </action>
+  <action name="actionTwilight_Sparkle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Twilight Sparkle</string>
    </property>
   </action>
  </widget>

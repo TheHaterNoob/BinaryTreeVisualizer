@@ -4,4 +4,5 @@
 #include "EWIEGA46WW/moc_customdialog_copy.cpp"
 #include "EWIEGA46WW/moc_deletedialog.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
+#include "EWIEGA46WW/moc_menu.cpp"
 #include "EWIEGA46WW/moc_searchdialog.cpp"

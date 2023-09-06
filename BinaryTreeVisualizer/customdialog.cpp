@@ -4,15 +4,12 @@
 CustomDialog::CustomDialog(QWidget *parent) : QDialog(parent)
 {
     spinBox = new QSpinBox(this);
-    radioButtonOptionA = new QRadioButton("Left", this);
-    radioButtonOptionB = new QRadioButton("Right", this);
     okButton = new QPushButton("OK", this);
     cancelButton = new QPushButton("Cancel", this);
 
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->addWidget(spinBox);
-    mainLayout->addWidget(radioButtonOptionA);
-    mainLayout->addWidget(radioButtonOptionB);
+
 
 
     //aqui solo instancia los botones en el dialog
@@ -29,7 +26,7 @@ CustomDialog::CustomDialog(QWidget *parent) : QDialog(parent)
         int value = spinBox->value();
 
         //opción seleccionada
-        bool optionASelected = radioButtonOptionA->isChecked();
+        bool optionASelected = true;
 
         //aqui no se que pedo la verdad
         emit intValueSelected(value, optionASelected);

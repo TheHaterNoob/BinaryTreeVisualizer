@@ -24,12 +24,19 @@ MainWindow::MainWindow(QWidget *parent)
 {
 
     ui->setupUi(this);
+
     setMinimumSize(
         1200,
         900
         );
 
+
     binaryTreeWidget = new BinaryTreeWidget(this);
+    connect(ui->openButton, &QPushButton::clicked, this, &MainWindow::on_actionAbrir_Arbol_triggered);
+    connect(ui->limpiar, &QPushButton::clicked, this, &MainWindow::on_limpiar_clicked);
+
+
+
 
 
     ui->Visualizer->addWidget(binaryTreeWidget);
@@ -49,7 +56,16 @@ void MainWindow::on_pushButton_3_clicked()
 
 
 }
+void MainWindow::saveTreeToFile(TreeNode* node, std::ofstream& outFile) {
+    if (!node) {
+    outFile << "null\n";
+    return;
+}
 
+outFile << node->data << "\n";
+saveTreeToFile(node->left, outFile);
+saveTreeToFile(node->right, outFile);
+}
 void MainWindow::showSearchDialog()
 {
     SearchDialog searchDialog(this);
@@ -75,11 +91,11 @@ void MainWindow::handleSearchResult(bool found) {
 }
 
 void MainWindow::handleDeleteResult(bool pudo) {
-    binaryTreeWidget->updateTree();
-
-    QTimer::singleShot(100, [this]() {
+    if(Unicornio){
+        binaryTreeWidget->updateTreeUnicorn();
+    }else{
         binaryTreeWidget->updateTree();
-    });
+    }
     if(binaryTreeWidget->binaryTree.getRoot()==nullptr){
         this->Head=false;
     }
@@ -102,39 +118,82 @@ void MainWindow::showCustomDialog()
     }
 }
 
+
+
 void MainWindow::showCustomDialog2()
 {
-    if(this->Head){
+    if(this->Head) {
+                if(type=='n'){
+                    CustomDialog2 dialog(this);
+
+                    // Fill the parentComboBox
+                    TreeNode* root = binaryTreeWidget->binaryTree.getRoot();
+                    fillParentComboBox(dialog.parentComboBox, root, "");
+
+                    connect(&dialog, &CustomDialog2::intValueSelected, this, &MainWindow::handleIntValueSelectedNode2);
+
+                    dialog.exec();
+                }else{
+                    CustomDialog dialog(this);
+
+                    //se conecta
+                    connect(&dialog, &CustomDialog::intValueSelected, this, &MainWindow::handleIntValueSelectedNode);
+
+                    dialog.exec();
+                }
+    } else {
+                QMessageBox::information(this, "ERROR", "NO HAY HEAD");
+    }
+}
 
 
-    CustomDialog2 dialog(this);
-
-    //se conecta
-    connect(&dialog, &CustomDialog2::intValueSelected, this, &MainWindow::handleIntValueSelectedNode);
-
-    dialog.exec();
-    }else{
-    QMessageBox::information(this, "ERROR", "NO HAY HEAD");
+void MainWindow::fillParentComboBox(QComboBox* comboBox, TreeNode* node, QString prefix) {
+    if (node) {
+                comboBox->addItem(prefix + QString::number(node->data), QVariant::fromValue<void*>(node));
+                fillParentComboBox(comboBox, node->left, prefix + "L ");
+                fillParentComboBox(comboBox, node->right, prefix + "R ");
     }
 }
 
 void MainWindow::handleIntValueSelectedHead(int value) {
     binaryTreeWidget->binaryTree.insert(value);
-    binaryTreeWidget->updateTree();
+    if(Unicornio){
+                binaryTreeWidget->updateTreeUnicorn();
+    }else{
+                binaryTreeWidget->updateTree();
+    }
+    if(binaryTreeWidget->binaryTree.getRoot()){
     this->Head=true;
-    QTimer::singleShot(100, [this]() {
-        binaryTreeWidget->updateTree();
-    });
+    }
 }
 
 void MainWindow::handleIntValueSelectedNode(int value) {
+    if(type=='b'){
     binaryTreeWidget->binaryTree.insert(value);
-    binaryTreeWidget->updateTree();
+    }else if(type=='a'){
+    binaryTreeWidget->binaryTree.insertNodeAVL(value);
+    }
 
-    QTimer::singleShot(100, [this]() {
-        binaryTreeWidget->updateTree();
-    });
+    updateTreeBasedOnUnicornio();
 }
+
+void MainWindow::handleIntValueSelectedNode2(int value, TreeNode* parentNode, bool isLeftChild) {
+    if(type=='n'){
+    binaryTreeWidget->binaryTree.insertNodeNormal(value,parentNode,isLeftChild);
+    }
+
+    updateTreeBasedOnUnicornio();
+}
+
+void MainWindow::updateTreeBasedOnUnicornio() {
+    if(Unicornio){
+    binaryTreeWidget->updateTreeUnicorn();
+    }else{
+    binaryTreeWidget->updateTree();
+    }
+}
+
+
 
 //nuevo planel
 void MainWindow::on_pushButton_2_clicked()
@@ -152,5 +211,144 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::on_pushButton_4_clicked()
 {
  showDeleteDialog();
+}
+
+
+void MainWindow::on_Guardar_clicked()
+{
+ QString filePath = QFileDialog::getSaveFileName(this, "Guardar árbol", "", "Archivos de texto (*.txt)");
+
+     if (!filePath.isEmpty()) {
+                std::ofstream outFile(filePath.toStdString());
+
+                if (outFile.is_open()) {
+                    TreeNode* root = binaryTreeWidget->binaryTree.getRoot();
+                    saveTreeToFile(root, outFile);
+                    outFile.close();
+                    QMessageBox::information(this, "Guardado", "El árbol se ha guardado en el archivo.");
+                } else {
+                    QMessageBox::critical(this, "Error", "No se pudo abrir el archivo para guardar.");
+                }
+ }
+
+}
+
+
+void MainWindow::on_actionYEP_triggered()
+{
+ QString filePath = QFileDialog::getSaveFileName(this, "Guardar árbol", "", "Archivos de texto (*.txt)");
+
+     if (!filePath.isEmpty()) {
+                std::ofstream outFile(filePath.toStdString());
+
+                if (outFile.is_open()) {
+                    TreeNode* root = binaryTreeWidget->binaryTree.getRoot();
+                    saveTreeToFile(root, outFile);
+                    outFile.close();
+                    QMessageBox::information(this, "Guardado", "El árbol se ha guardado en el archivo.");
+                } else {
+                    QMessageBox::critical(this, "Error", "No se pudo abrir el archivo para guardar.");
+                }
+ }
+
+}
+
+
+void MainWindow::on_actionAbrir_Arbol_triggered()
+{
+
+}
+
+
+void MainWindow::on_pushButton_5_clicked()
+{
+
+}
+
+
+void MainWindow::on_openButton_clicked()
+{
+ QString filePath = QFileDialog::getOpenFileName(this, "Abrir archivo de árbol", "", "Archivos de texto (*.txt)");
+
+     if (!filePath.isEmpty()) {
+                if(type=='n'){
+                    binaryTreeWidget->binaryTree.loadFromFileNormal(filePath);
+                }else if(type=='b'){
+                    binaryTreeWidget->binaryTree.loadFromFile(filePath);
+                }else if(type=='a'){
+                    binaryTreeWidget->binaryTree.loadFromFileAVL(filePath);
+                }
+                if(Unicornio){
+                    binaryTreeWidget->updateTreeUnicorn();
+                }else{
+                    binaryTreeWidget->updateTree();
+                }
+                if(binaryTreeWidget->binaryTree.getRoot()!=nullptr){
+                    this->Head=true;
+                }
+ }
+}
+
+
+void MainWindow::on_limpiar_clicked()
+{
+ binaryTreeWidget->clearTree();
+ this->Head=false;
+     if(Unicornio){
+                    binaryTreeWidget->updateTreeUnicorn();
+     }else{
+                    binaryTreeWidget->updateTree();
+     }
+}
+
+
+void MainWindow::on_actionConvert_to_BST_triggered()
+{
+ type='b';
+ binaryTreeWidget->binaryTree.insertNodesFromUnorderedTree(binaryTreeWidget->binaryTree.getRoot());
+
+     if(Unicornio){
+                    binaryTreeWidget->updateTreeUnicorn();
+     }else{
+                    binaryTreeWidget->updateTree();
+     }
+}
+
+
+void MainWindow::on_actionConvert_to_Binary_disorder_triggered()
+{
+     type='n';
+    if(Unicornio){
+                binaryTreeWidget->updateTreeUnicorn();
+    }else{
+                binaryTreeWidget->updateTree();
+    }
+}
+
+
+void MainWindow::on_actionConvert_to_AVL_triggered()
+{
+     type='a';
+     binaryTreeWidget->binaryTree.convertToAVLTree();
+     if(Unicornio){
+        binaryTreeWidget->updateTreeUnicorn();
+     }else{
+        binaryTreeWidget->updateTree();
+     }
+}
+
+
+
+
+
+void MainWindow::on_actionTwilight_Sparkle_triggered()
+{
+     if(ui->actionTwilight_Sparkle->isChecked()){
+                Unicornio=true;
+        binaryTreeWidget->updateTreeUnicorn();
+     }else{
+              Unicornio=false;
+                binaryTreeWidget->updateTree();
+     }
 }
 
