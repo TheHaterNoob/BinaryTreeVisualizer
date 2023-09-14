@@ -1,6 +1,9 @@
 #ifndef BINARYTREE_H
 #define BINARYTREE_H
 #include <QObject>
+#include <QPropertyAnimation>
+#include <QSequentialAnimationGroup>
+
 struct TreeNode {
     int data;
     int x;
@@ -44,6 +47,13 @@ public:
     void buildAVLTreeFromSortedValues(const std::vector<int>& values, int left, int right);
     void loadFromFileAVL(const QString& filePath);
 
+    QPointF getCurrentNodePosition(TreeNode* node);
+      TreeNode* createNode(int value);
+
+
+
+
+
 private:
     TreeNode* root;
     int calculateHeight(TreeNode* node) const;
@@ -51,7 +61,7 @@ private:
     TreeNode* rotateLeft(TreeNode* node);
     TreeNode* rotateRight(TreeNode* node);
 
-    TreeNode* createNode(int value);
+
     void insertNode(TreeNode* currentNode, TreeNode* newNode);
     bool searchNode(TreeNode* currentNode, int value) const;
     TreeNode* deleteNode(TreeNode* currentNode, int value);

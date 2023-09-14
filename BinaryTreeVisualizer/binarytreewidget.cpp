@@ -13,6 +13,7 @@
 #include <QColor>
 #include <QPropertyAnimation>
 #include <QTimer>
+
 QHash<QGraphicsEllipseItem*, QMetaObject::Connection> colorChangeConnections;
 BinaryTreeWidget::BinaryTreeWidget(QWidget* parent) : QWidget(parent) {
 
@@ -30,8 +31,8 @@ BinaryTreeWidget::BinaryTreeWidget(QWidget* parent) : QWidget(parent) {
     layout->addWidget(view);
     colorTimer = new QTimer(this);
     colorTimer->start(100);
-    QBrush brush(QColor(66,69,73));
-    scene->setBackgroundBrush(brush);
+    //QBrush brush(QColor(66,69,73));
+    //scene->setBackgroundBrush(brush);
 }
 
 void BinaryTreeWidget::drawTreeUnicorn(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse) {
@@ -84,10 +85,7 @@ void BinaryTreeWidget::drawTreeUnicorn(QGraphicsScene* scene, TreeNode* node, QG
             ellipse->setBrush(QBrush(colors[colorIndex]));
             colorIndex = (colorIndex + 1) % colors.size();
         });
-
-
 }
-
 
 //aqui se dibuja le arbol
 void BinaryTreeWidget::drawTree(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse) {
@@ -129,8 +127,8 @@ void BinaryTreeWidget::drawTree(QGraphicsScene* scene, TreeNode* node, QGraphics
 
     drawTree(scene, node->left, ellipse);
     drawTree(scene, node->right, ellipse);
-
 }
+
 
 void BinaryTreeWidget::clearTree() {
     scene->clear();
@@ -144,7 +142,10 @@ void BinaryTreeWidget::updateTree() {
 
     binaryTree.calculateNodePositionsNormal(binaryTree.getRoot(), 0, 600, 50);
     drawTree(scene, binaryTree.getRoot(), nullptr);
+
+
 }
+
 
 void BinaryTreeWidget::updateTreeUnicorn() {
     disconnect(colorTimer, 0, 0, 0);
@@ -158,3 +159,7 @@ void BinaryTreeWidget::updateTreeUnicorn() {
 void BinaryTreeWidget::setRoot(TreeNode* root) {
     this->root = root;
 }
+
+
+
+

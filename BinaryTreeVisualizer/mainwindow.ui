@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1579</width>
-    <height>1238</height>
+    <width>1591</width>
+    <height>1106</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>180</x>
       <y>40</y>
-      <width>1361</width>
-      <height>931</height>
+      <width>1221</width>
+      <height>731</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="Visualizer"/>
@@ -51,7 +51,7 @@
        <x>10</x>
        <y>160</y>
        <width>123</width>
-       <height>531</height>
+       <height>431</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="Y">
@@ -89,7 +89,7 @@
 </string>
         </property>
         <property name="text">
-         <string>Crear Nodo Hoja</string>
+         <string>Create Leaf Node</string>
         </property>
        </widget>
       </item>
@@ -108,7 +108,7 @@
 </string>
         </property>
         <property name="text">
-         <string>Eliminar Nodo</string>
+         <string>Delete Node</string>
         </property>
        </widget>
       </item>
@@ -127,7 +127,7 @@
 </string>
         </property>
         <property name="text">
-         <string>Buscar Elemento</string>
+         <string>Search Node</string>
         </property>
        </widget>
       </item>
@@ -145,7 +145,7 @@
 }</string>
         </property>
         <property name="text">
-         <string>Guardar Arbol</string>
+         <string>Save Tree</string>
         </property>
        </widget>
       </item>
@@ -163,7 +163,25 @@
 }</string>
         </property>
         <property name="text">
-         <string>Abrir Arbol</string>
+         <string>Open Tree</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="showRecorridosButton">
+        <property name="font">
+         <font>
+          <family>Tw Cen MT Condensed Extra Bold</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	background-color: rgb(119, 193, 75);
+}</string>
+        </property>
+        <property name="text">
+         <string>Orders</string>
         </property>
        </widget>
       </item>
@@ -181,7 +199,7 @@
 }</string>
         </property>
         <property name="text">
-         <string>Limpiar Pantalla</string>
+         <string>Clean Screen</string>
         </property>
        </widget>
       </item>
@@ -204,14 +222,34 @@ border-color: rgb(240, 240, 240);</string>
       <string/>
      </property>
     </widget>
+    <widget class="QPushButton" name="saveScreenshot">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>590</y>
+       <width>41</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Downloads/1200px-Picture_icon_BLACK.svg.png);
+
+QPushButton {
+	background-color: rgb(119, 193, 75);
+}</string>
+     </property>
+     <property name="text">
+      <string>F</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QFrame" name="frame_2">
     <property name="geometry">
      <rect>
       <x>190</x>
       <y>50</y>
-      <width>1341</width>
-      <height>911</height>
+      <width>1201</width>
+      <height>711</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -226,17 +264,92 @@ border-color: rgb(240, 240, 240);</string>
      <enum>QFrame::Raised</enum>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>780</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT Condensed Extra Bold</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(119, 193, 75);
+}</string>
+    </property>
+    <property name="text">
+     <string>ALTURA</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>780</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT Condensed Extra Bold</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(119, 193, 75);
+}</string>
+    </property>
+    <property name="text">
+     <string>PROFUNDIDAD</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>780</y>
+      <width>111</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tw Cen MT Condensed Extra Bold</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(119, 193, 75);
+}</string>
+    </property>
+    <property name="text">
+     <string>BALANCE</string>
+    </property>
+   </widget>
    <zorder>frame</zorder>
    <zorder>verticalLayoutWidget_2</zorder>
    <zorder>frame_2</zorder>
+   <zorder>pushButton_5</zorder>
+   <zorder>pushButton_6</zorder>
+   <zorder>pushButton_7</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1579</width>
-     <height>21</height>
+     <width>1591</width>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

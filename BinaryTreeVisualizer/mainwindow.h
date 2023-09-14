@@ -13,7 +13,15 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <QPropertyAnimation>
+#include <QSequentialAnimationGroup>
+#include <QParallelAnimationGroup>
+#include <QGraphicsItemAnimation>
+#include <QTimer>
+#include <QPropertyAnimation>
+#include <QSequentialAnimationGroup>
 
+#include "altura.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -69,6 +77,23 @@ private slots:
 
 
     void on_actionTwilight_Sparkle_triggered();
+    void saveScreenshot();
+
+    void on_showRecorridosButton_clicked();
+
+    void showRecorridosDialog();
+    QString getPreorder(TreeNode* node);
+    QString getInorder(TreeNode* node);
+    QString getPostorder(TreeNode* node);
+
+
+
+
+    void on_pushButton_6_clicked();
+
+    void on_pushButton_7_clicked();
+
+    void on_saveScreenshot_clicked();
 
 private:
     Ui::MainWindow *ui;

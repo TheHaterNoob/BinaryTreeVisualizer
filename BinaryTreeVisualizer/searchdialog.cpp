@@ -2,6 +2,7 @@
 #include "qboxlayout.h"
 #include "mainwindow.h"
 
+
 SearchDialog::SearchDialog(MainWindow *mainWindow, QWidget *parent) : QDialog(parent)
 {
     setWindowTitle("Search Node");
@@ -14,8 +15,11 @@ SearchDialog::SearchDialog(MainWindow *mainWindow, QWidget *parent) : QDialog(pa
     layout->addWidget(searchLineEdit);
     layout->addWidget(searchButton);
 
-    connect(searchButton, &QPushButton::clicked, this, &SearchDialog::searchButtonClicked);
+    // Limitar la entrada a números de menos de 99
+    QIntValidator *validator = new QIntValidator(0, 98, this);
+    searchLineEdit->setValidator(validator);
 
+    connect(searchButton, &QPushButton::clicked, this, &SearchDialog::searchButtonClicked);
 }
 
 void SearchDialog::searchButtonClicked()
@@ -25,3 +29,8 @@ void SearchDialog::searchButtonClicked()
     emit searchResult(exist);
     this->close();
 }
+
+
+
+
+

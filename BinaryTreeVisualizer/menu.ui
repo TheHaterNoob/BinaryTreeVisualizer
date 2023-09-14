@@ -13,67 +13,45 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>190</y>
-     <width>371</width>
-     <height>91</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Tw Cen MT Condensed Extra Bold</family>
-     <pointsize>22</pointsize>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-	background-color: rgb(119, 193, 75);
-}</string>
-   </property>
-   <property name="text">
-    <string>Arbol BST</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>350</y>
-     <width>371</width>
-     <height>91</height>
+     <x>500</x>
+     <y>580</y>
+     <width>81</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Tw Cen MT Condensed Extra Bold</family>
-     <pointsize>22</pointsize>
+     <pointsize>14</pointsize>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">QPushButton {
-	background-color: rgb(119, 193, 75);
+    <string notr="true">
+QPushButton {
+	background-color: rgb(92, 203, 65);
+
 }</string>
    </property>
    <property name="text">
-    <string>Arbol Binario</string>
+    <string>¡START!</string>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>60</y>
-     <width>271</width>
-     <height>81</height>
+     <x>340</x>
+     <y>100</y>
+     <width>421</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Tw Cen MT Condensed Extra Bold</family>
-     <pointsize>36</pointsize>
+     <pointsize>72</pointsize>
     </font>
    </property>
    <property name="text">
@@ -83,30 +61,65 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>510</y>
-     <width>371</width>
-     <height>91</height>
+     <x>-230</x>
+     <y>-30</y>
+     <width>1601</width>
+     <height>1261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/Downloads/855180b4-d451-4a1d-b13c-76324558e010.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>250</y>
+     <width>481</width>
+     <height>311</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/Downloads/imagen_2023-09-09_000023045-removebg-preview.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>650</y>
+     <width>141</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Tw Cen MT Condensed Extra Bold</family>
-     <pointsize>22</pointsize>
+     <pointsize>12</pointsize>
     </font>
    </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-	background-color: rgb(119, 193, 75);
-}</string>
-   </property>
    <property name="text">
-    <string>Arbol AVL</string>
+    <string>By AA Comp.</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
+  <zorder>label_2</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>label</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
  </widget>
  <resources/>
  <connections/>

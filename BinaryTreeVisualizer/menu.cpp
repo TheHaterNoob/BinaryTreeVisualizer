@@ -25,6 +25,7 @@ void menu::on_pushButton_2_clicked()
     arbol = 2;
     mainWindow->show();
     this->hide();
+
 }
 
 
@@ -32,5 +33,17 @@ void menu::on_pushButton_clicked()
 {
     arbol = 1;
     //luego
+}
+
+
+void menu::on_pushButton_3_clicked()
+{
+
+}
+
+
+void menu::on_label_3_linkActivated(const QString &link)
+{
+
 }
 

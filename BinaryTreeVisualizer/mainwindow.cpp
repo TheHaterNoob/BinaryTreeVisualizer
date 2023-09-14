@@ -6,6 +6,8 @@
 #include <QGraphicsView>
 #include <QGraphicsTextItem>
 #include <QInputDialog>
+#include "altura.h"
+#include "balance.h"
 #include "binarytree.h"
 #include "binarytreewidget.h"
 #include <QMessageBox>
@@ -15,6 +17,9 @@
 #include <QTimer>
 #include "searchdialog.h"
 #include "deletedialog.h"
+#include <QScrollBar>
+#include "profundidad.h"
+
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -25,6 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->setupUi(this);
 
+
     setMinimumSize(
         1200,
         900
@@ -34,7 +40,8 @@ MainWindow::MainWindow(QWidget *parent)
     binaryTreeWidget = new BinaryTreeWidget(this);
     connect(ui->openButton, &QPushButton::clicked, this, &MainWindow::on_actionAbrir_Arbol_triggered);
     connect(ui->limpiar, &QPushButton::clicked, this, &MainWindow::on_limpiar_clicked);
-
+    connect(ui->saveScreenshot, &QPushButton::clicked, this, &MainWindow::saveScreenshot);
+    connect(ui->showRecorridosButton, &QPushButton::clicked, this, &MainWindow::showRecorridosDialog);
 
 
 
@@ -53,15 +60,25 @@ MainWindow::~MainWindow()
 void MainWindow::on_pushButton_3_clicked()
 {
     showCustomDialog();
-
-
 }
+
+void MainWindow::saveScreenshot() {
+    QPixmap screenshot = binaryTreeWidget->view->grab();
+
+    QString filePath = QFileDialog::getSaveFileName(this, "Guardar Captura de Pantalla", "", "Imágenes (*.png)");
+
+        if (!filePath.isEmpty()) {
+
+        screenshot.save(filePath, "PNG");
+        QMessageBox::information(this, "Guardado", "La captura de pantalla se ha guardado como un archivo .png.");
+    }
+}
+
 void MainWindow::saveTreeToFile(TreeNode* node, std::ofstream& outFile) {
     if (!node) {
     outFile << "null\n";
     return;
 }
-
 outFile << node->data << "\n";
 saveTreeToFile(node->left, outFile);
 saveTreeToFile(node->right, outFile);
@@ -262,6 +279,12 @@ void MainWindow::on_actionAbrir_Arbol_triggered()
 
 void MainWindow::on_pushButton_5_clicked()
 {
+ altura alturaDialog(this); // Suponiendo que "altura" es un QDialog
+
+ // Muestra la ventana de "altura" como un diálogo modal
+ alturaDialog.exec();
+
+
 
 }
 
@@ -350,5 +373,109 @@ void MainWindow::on_actionTwilight_Sparkle_triggered()
               Unicornio=false;
                 binaryTreeWidget->updateTree();
      }
+}
+
+void MainWindow::showRecorridosDialog() {
+     // Crear un diálogo para mostrar los recorridos
+     QDialog recorridosDialog(this);
+     recorridosDialog.setWindowTitle("Recorridos del Árbol Binario");
+
+         // Crear un layout para el diálogo
+         QVBoxLayout* layout = new QVBoxLayout(&recorridosDialog);
+
+     // Obtener el nodo raíz del árbol binario
+     TreeNode* root = binaryTreeWidget->binaryTree.getRoot();
+
+     // Crear etiquetas para los recorridos y agregarlas al layout
+     QLabel* preorderLabel = new QLabel("Preorder: ");
+     QLabel* inorderLabel = new QLabel("Inorder: ");
+     QLabel* postorderLabel = new QLabel("Postorder: ");
+
+     // Obtener los recorridos y convertirlos en cadenas de texto
+     QString preorderStr = getPreorder(root);
+     QString inorderStr = getInorder(root);
+     QString postorderStr = getPostorder(root);
+
+     QLabel* preorderValueLabel = new QLabel(preorderStr);
+     QLabel* inorderValueLabel = new QLabel(inorderStr);
+     QLabel* postorderValueLabel = new QLabel(postorderStr);
+
+     layout->addWidget(preorderLabel);
+     layout->addWidget(preorderValueLabel);
+     layout->addWidget(inorderLabel);
+     layout->addWidget(inorderValueLabel);
+     layout->addWidget(postorderLabel);
+     layout->addWidget(postorderValueLabel);
+
+     // Mostrar el diálogo
+     recorridosDialog.exec();
+}
+
+QString MainWindow::getPreorder(TreeNode* node) {
+     if (!node) {
+                return "";
+     }
+
+     QString result = QString::number(node->data) + " ";
+     result += getPreorder(node->left);
+     result += getPreorder(node->right);
+
+     return result;
+}
+
+QString MainWindow::getInorder(TreeNode* node) {
+     if (!node) {
+                return "";
+     }
+
+     QString result = getInorder(node->left);
+     result += QString::number(node->data) + " ";
+     result += getInorder(node->right);
+
+     return result;
+}
+
+QString MainWindow::getPostorder(TreeNode* node) {
+     if (!node) {
+                return "";
+     }
+
+     QString result = getPostorder(node->left);
+     result += getPostorder(node->right);
+     result += QString::number(node->data) + " ";
+
+     return result;
+}
+
+
+void MainWindow::on_showRecorridosButton_clicked()
+{
+
+}
+
+
+void MainWindow::on_pushButton_6_clicked()
+{
+     profundidad profundidadDialog(this);
+
+
+     profundidadDialog.exec();
+}
+
+
+void MainWindow::on_pushButton_7_clicked()
+{
+
+     balance balanceDialog(this);
+
+
+     balanceDialog.exec();
+
+}
+
+
+void MainWindow::on_saveScreenshot_clicked()
+{
+
 }
 

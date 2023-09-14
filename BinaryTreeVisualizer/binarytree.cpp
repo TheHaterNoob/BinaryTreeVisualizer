@@ -72,6 +72,7 @@ void BinaryTree::insertNode(TreeNode* currentNode, TreeNode* newNode) {
         // Value already exists, show a warning
         qDebug() << "Value already exists in the tree!";
     }
+
 }
 
 void BinaryTree::insertNodeNormal(int value, TreeNode* parentNode, bool isLeftChild) {

@@ -2,9 +2,10 @@
 #include "qboxlayout.h"
 #include "mainwindow.h"
 
+
 DeleteDialog::DeleteDialog(MainWindow *mainWindow, QWidget *parent) : QDialog(parent)
 {
-    setWindowTitle("Search Node");
+    setWindowTitle("Delete Node");
     resize(300, 100);
     mainWindowPtr = mainWindow;
     deleteLineEdit = new QLineEdit(this);
@@ -14,15 +15,19 @@ DeleteDialog::DeleteDialog(MainWindow *mainWindow, QWidget *parent) : QDialog(pa
     layout->addWidget(deleteLineEdit);
     layout->addWidget(deleteButton);
 
+    // Limitar la entrada a dígitos de menos de 99
+    QIntValidator *validator = new QIntValidator(0, 98, this);
+    deleteLineEdit->setValidator(validator);
+
     connect(deleteButton, &QPushButton::clicked, this, &DeleteDialog::deleteButtonClicked);
 }
 
+
 void DeleteDialog::deleteButtonClicked()
 {
-    int deleteValue2 = deleteLineEdit->text().toInt();
-    mainWindowPtr->binaryTreeWidget->binaryTree.deleteNodeDefault(deleteValue2);
-    bool pudo=true;
+    int deleteValue = deleteLineEdit->text().toInt();
+    mainWindowPtr->binaryTreeWidget->binaryTree.deleteNodeDefault(deleteValue);
+    bool pudo = true;
     emit deleteResult(pudo);
     this->close();
-
 }

@@ -8,6 +8,8 @@
 #include <QObject>
 #include <QMessageBox>
 #include "binarytree.h"
+#include <QGraphicsItemAnimation>
+#include <QTimeLine>
 
 class BinaryTreeWidget : public QWidget {
     Q_OBJECT
@@ -17,6 +19,10 @@ public:
     void clearTree();
     void updateTreeUnicorn();
     BinaryTree binaryTree;
+    QGraphicsView* view;
+
+
+
 void setRoot(TreeNode* root);
         QTimer *colorTimer;
 private:
@@ -24,7 +30,7 @@ private:
     void drawTreeUnicorn(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse);
     void drawTree(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse);
     QGraphicsScene* scene;
-    QGraphicsView* view;
+
 
 
 

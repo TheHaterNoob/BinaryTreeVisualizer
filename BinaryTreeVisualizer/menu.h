@@ -23,6 +23,10 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButton_3_clicked();
+
+    void on_label_3_linkActivated(const QString &link);
+
 private:
     MainWindow *mainWindow;
 

@@ -6,6 +6,8 @@
 #include <QPushButton>
 #include "mainwindow.h"
 
+
+
 class SearchDialog : public QDialog
 {
     Q_OBJECT

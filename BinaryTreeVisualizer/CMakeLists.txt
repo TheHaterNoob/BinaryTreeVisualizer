@@ -35,6 +35,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         deletedialog.h
         deletedialog.cpp
         menu.h menu.cpp menu.ui
+        altura.h altura.cpp altura.ui
+        profundidad.h profundidad.cpp profundidad.ui
+        balance.h balance.cpp balance.ui
+
 
 
     )
