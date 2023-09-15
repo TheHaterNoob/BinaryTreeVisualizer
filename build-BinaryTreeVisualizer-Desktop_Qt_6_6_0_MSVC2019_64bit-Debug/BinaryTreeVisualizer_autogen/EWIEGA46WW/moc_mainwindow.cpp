@@ -73,11 +73,20 @@ static constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers:
     "on_actionConvert_to_BST_triggered",
     "on_actionConvert_to_Binary_disorder_triggered",
     "on_actionConvert_to_AVL_triggered",
-    "on_actionTwilight_Sparkle_triggered"
+    "on_actionTwilight_Sparkle_triggered",
+    "saveScreenshot",
+    "on_showRecorridosButton_clicked",
+    "showRecorridosDialog",
+    "getPreorder",
+    "getInorder",
+    "getPostorder",
+    "on_pushButton_6_clicked",
+    "on_pushButton_7_clicked",
+    "on_saveScreenshot_clicked"
 );
 #else  // !QT_MOC_HAS_STRING_DATA
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
-    uint offsetsAndSizes[72];
+    uint offsetsAndSizes[90];
     char stringdata0[11];
     char stringdata1[24];
     char stringdata2[1];
@@ -114,6 +123,15 @@ struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {
     char stringdata33[46];
     char stringdata34[34];
     char stringdata35[36];
+    char stringdata36[15];
+    char stringdata37[32];
+    char stringdata38[21];
+    char stringdata39[12];
+    char stringdata40[11];
+    char stringdata41[13];
+    char stringdata42[24];
+    char stringdata43[24];
+    char stringdata44[26];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_CLASSMainWindowENDCLASS_t::offsetsAndSizes) + ofs), len 
@@ -154,7 +172,16 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
         QT_MOC_LITERAL(544, 33),  // "on_actionConvert_to_BST_trigg..."
         QT_MOC_LITERAL(578, 45),  // "on_actionConvert_to_Binary_di..."
         QT_MOC_LITERAL(624, 33),  // "on_actionConvert_to_AVL_trigg..."
-        QT_MOC_LITERAL(658, 35)   // "on_actionTwilight_Sparkle_tri..."
+        QT_MOC_LITERAL(658, 35),  // "on_actionTwilight_Sparkle_tri..."
+        QT_MOC_LITERAL(694, 14),  // "saveScreenshot"
+        QT_MOC_LITERAL(709, 31),  // "on_showRecorridosButton_clicked"
+        QT_MOC_LITERAL(741, 20),  // "showRecorridosDialog"
+        QT_MOC_LITERAL(762, 11),  // "getPreorder"
+        QT_MOC_LITERAL(774, 10),  // "getInorder"
+        QT_MOC_LITERAL(785, 12),  // "getPostorder"
+        QT_MOC_LITERAL(798, 23),  // "on_pushButton_6_clicked"
+        QT_MOC_LITERAL(822, 23),  // "on_pushButton_7_clicked"
+        QT_MOC_LITERAL(846, 25)   // "on_saveScreenshot_clicked"
     },
     "MainWindow",
     "on_pushButton_3_clicked",
@@ -191,7 +218,16 @@ Q_CONSTINIT static const qt_meta_stringdata_CLASSMainWindowENDCLASS_t qt_meta_st
     "on_actionConvert_to_BST_triggered",
     "on_actionConvert_to_Binary_disorder_triggered",
     "on_actionConvert_to_AVL_triggered",
-    "on_actionTwilight_Sparkle_triggered"
+    "on_actionTwilight_Sparkle_triggered",
+    "saveScreenshot",
+    "on_showRecorridosButton_clicked",
+    "showRecorridosDialog",
+    "getPreorder",
+    "getInorder",
+    "getPostorder",
+    "on_pushButton_6_clicked",
+    "on_pushButton_7_clicked",
+    "on_saveScreenshot_clicked"
 };
 #undef QT_MOC_LITERAL
 #endif // !QT_MOC_HAS_STRING_DATA
@@ -203,7 +239,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-      24,   14, // methods
+      33,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -211,30 +247,39 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,  158,    2, 0x08,    1 /* Private */,
-       3,    0,  159,    2, 0x08,    2 /* Private */,
-       4,    0,  160,    2, 0x08,    3 /* Private */,
-       5,    0,  161,    2, 0x08,    4 /* Private */,
-       6,    1,  162,    2, 0x08,    5 /* Private */,
-       8,    1,  165,    2, 0x08,    7 /* Private */,
-      10,    3,  168,    2, 0x08,    9 /* Private */,
-      14,    1,  175,    2, 0x08,   13 /* Private */,
-      15,    0,  178,    2, 0x08,   15 /* Private */,
-      16,    1,  179,    2, 0x08,   16 /* Private */,
-      18,    3,  182,    2, 0x08,   18 /* Private */,
-      23,    0,  189,    2, 0x08,   22 /* Private */,
-      24,    0,  190,    2, 0x08,   23 /* Private */,
-      25,    0,  191,    2, 0x08,   24 /* Private */,
-      26,    0,  192,    2, 0x08,   25 /* Private */,
-      27,    0,  193,    2, 0x08,   26 /* Private */,
-      28,    0,  194,    2, 0x08,   27 /* Private */,
-      29,    0,  195,    2, 0x08,   28 /* Private */,
-      30,    0,  196,    2, 0x08,   29 /* Private */,
-      31,    0,  197,    2, 0x08,   30 /* Private */,
-      32,    0,  198,    2, 0x08,   31 /* Private */,
-      33,    0,  199,    2, 0x08,   32 /* Private */,
-      34,    0,  200,    2, 0x08,   33 /* Private */,
-      35,    0,  201,    2, 0x08,   34 /* Private */,
+       1,    0,  212,    2, 0x08,    1 /* Private */,
+       3,    0,  213,    2, 0x08,    2 /* Private */,
+       4,    0,  214,    2, 0x08,    3 /* Private */,
+       5,    0,  215,    2, 0x08,    4 /* Private */,
+       6,    1,  216,    2, 0x08,    5 /* Private */,
+       8,    1,  219,    2, 0x08,    7 /* Private */,
+      10,    3,  222,    2, 0x08,    9 /* Private */,
+      14,    1,  229,    2, 0x08,   13 /* Private */,
+      15,    0,  232,    2, 0x08,   15 /* Private */,
+      16,    1,  233,    2, 0x08,   16 /* Private */,
+      18,    3,  236,    2, 0x08,   18 /* Private */,
+      23,    0,  243,    2, 0x08,   22 /* Private */,
+      24,    0,  244,    2, 0x08,   23 /* Private */,
+      25,    0,  245,    2, 0x08,   24 /* Private */,
+      26,    0,  246,    2, 0x08,   25 /* Private */,
+      27,    0,  247,    2, 0x08,   26 /* Private */,
+      28,    0,  248,    2, 0x08,   27 /* Private */,
+      29,    0,  249,    2, 0x08,   28 /* Private */,
+      30,    0,  250,    2, 0x08,   29 /* Private */,
+      31,    0,  251,    2, 0x08,   30 /* Private */,
+      32,    0,  252,    2, 0x08,   31 /* Private */,
+      33,    0,  253,    2, 0x08,   32 /* Private */,
+      34,    0,  254,    2, 0x08,   33 /* Private */,
+      35,    0,  255,    2, 0x08,   34 /* Private */,
+      36,    0,  256,    2, 0x08,   35 /* Private */,
+      37,    0,  257,    2, 0x08,   36 /* Private */,
+      38,    0,  258,    2, 0x08,   37 /* Private */,
+      39,    1,  259,    2, 0x08,   38 /* Private */,
+      40,    1,  262,    2, 0x08,   40 /* Private */,
+      41,    1,  265,    2, 0x08,   42 /* Private */,
+      42,    0,  268,    2, 0x08,   44 /* Private */,
+      43,    0,  269,    2, 0x08,   45 /* Private */,
+      44,    0,  270,    2, 0x08,   46 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -258,6 +303,15 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::QString, 0x80000000 | 11,   21,
+    QMetaType::QString, 0x80000000 | 11,   21,
+    QMetaType::QString, 0x80000000 | 11,   21,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -331,6 +385,27 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
         // method 'on_actionConvert_to_AVL_triggered'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_actionTwilight_Sparkle_triggered'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'saveScreenshot'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_showRecorridosButton_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'showRecorridosDialog'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'getPreorder'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<TreeNode *, std::false_type>,
+        // method 'getInorder'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<TreeNode *, std::false_type>,
+        // method 'getPostorder'
+        QtPrivate::TypeAndForceComplete<QString, std::false_type>,
+        QtPrivate::TypeAndForceComplete<TreeNode *, std::false_type>,
+        // method 'on_pushButton_6_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_pushButton_7_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_saveScreenshot_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -366,6 +441,18 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 21: _t->on_actionConvert_to_Binary_disorder_triggered(); break;
         case 22: _t->on_actionConvert_to_AVL_triggered(); break;
         case 23: _t->on_actionTwilight_Sparkle_triggered(); break;
+        case 24: _t->saveScreenshot(); break;
+        case 25: _t->on_showRecorridosButton_clicked(); break;
+        case 26: _t->showRecorridosDialog(); break;
+        case 27: { QString _r = _t->getPreorder((*reinterpret_cast< std::add_pointer_t<TreeNode*>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 28: { QString _r = _t->getInorder((*reinterpret_cast< std::add_pointer_t<TreeNode*>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 29: { QString _r = _t->getPostorder((*reinterpret_cast< std::add_pointer_t<TreeNode*>>(_a[1])));
+            if (_a[0]) *reinterpret_cast< QString*>(_a[0]) = std::move(_r); }  break;
+        case 30: _t->on_pushButton_6_clicked(); break;
+        case 31: _t->on_pushButton_7_clicked(); break;
+        case 32: _t->on_saveScreenshot_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -401,13 +488,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 24)
+        if (_id < 33)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 24;
+        _id -= 33;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 24)
+        if (_id < 33)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 24;
+        _id -= 33;
     }
     return _id;
 }

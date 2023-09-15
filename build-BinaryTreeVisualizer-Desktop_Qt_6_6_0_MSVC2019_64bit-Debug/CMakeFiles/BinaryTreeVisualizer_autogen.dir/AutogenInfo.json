@@ -320,6 +320,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/altura.h",
+			"MU",
+			"EWIEGA46WW/moc_altura.cpp",
+			null
+		],
+		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/balance.h",
+			"MU",
+			"EWIEGA46WW/moc_balance.cpp",
+			null
+		],
+		[
 			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytree.h",
 			"MU",
 			"EWIEGA46WW/moc_binarytree.cpp",
@@ -359,6 +371,12 @@
 			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/menu.h",
 			"MU",
 			"EWIEGA46WW/moc_menu.cpp",
+			null
+		],
+		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/profundidad.h",
+			"MU",
+			"EWIEGA46WW/moc_profundidad.cpp",
 			null
 		],
 		[
@@ -423,6 +441,16 @@
 	"SOURCES" : 
 	[
 		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/altura.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/balance.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytree.cpp",
 			"MU",
 			null
@@ -459,6 +487,11 @@
 		],
 		[
 			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/menu.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/profundidad.cpp",
 			"MU",
 			null
 		],

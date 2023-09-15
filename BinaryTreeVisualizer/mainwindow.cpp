@@ -328,7 +328,7 @@ void MainWindow::on_limpiar_clicked()
 void MainWindow::on_actionConvert_to_BST_triggered()
 {
  type='b';
- binaryTreeWidget->binaryTree.insertNodesFromUnorderedTree(binaryTreeWidget->binaryTree.getRoot());
+ binaryTreeWidget->binaryTree.animateInsertionFromUnorderedTree(binaryTreeWidget,binaryTreeWidget->binaryTree.getRoot());
 
      if(Unicornio){
                     binaryTreeWidget->updateTreeUnicorn();
@@ -352,7 +352,7 @@ void MainWindow::on_actionConvert_to_Binary_disorder_triggered()
 void MainWindow::on_actionConvert_to_AVL_triggered()
 {
      type='a';
-     binaryTreeWidget->binaryTree.convertToAVLTree();
+      binaryTreeWidget->binaryTree.animateConversionToAVLTree(binaryTreeWidget);
      if(Unicornio){
         binaryTreeWidget->updateTreeUnicorn();
      }else{

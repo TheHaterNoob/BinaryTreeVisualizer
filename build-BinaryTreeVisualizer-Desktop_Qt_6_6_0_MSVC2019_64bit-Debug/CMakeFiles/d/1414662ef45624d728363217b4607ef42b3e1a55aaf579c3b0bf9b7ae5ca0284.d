@@ -1,13 +1,20 @@
 BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/QFile \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/QObject \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QParallelAnimationGroup \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QPropertyAnimation \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QSequentialAnimationGroup \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/QTextStream \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QTimeLine \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QTimer \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q23utility.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qabstractitemmodel.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qalgorithms.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qanimationgroup.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qanystringview.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qarraydata.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qarraydataops.h \
@@ -16,6 +23,7 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qatomic.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qbytearray.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qbytearrayalgorithms.h \
@@ -37,6 +45,7 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdatetime.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdebug.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdir.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qfile.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qfiledevice.h \
@@ -75,13 +84,16 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qobjectdefs_impl.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qoverload.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpair.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qparallelanimationgroup.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpoint.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qrect.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qrefcount.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qregularexpression.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qscopeguard.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qsequentialanimationgroup.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qset.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qshareddata.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qshareddata_impl.h \
@@ -109,6 +121,8 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtimeline.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtimer.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtimezone.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtnoop.h \
@@ -123,6 +137,7 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qurl.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qvariant.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qxptype_traits.h \
@@ -161,6 +176,7 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QComboBox \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QDialog \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QFileDialog \
+  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsItemAnimation \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsView \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QHBoxLayout \
@@ -182,6 +198,7 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qfiledialog.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgraphicsitemanimation.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgraphicsscene.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgraphicsview.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgridlayout.h \
@@ -426,6 +443,10 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/Platform/Windows.cmake \
   C:/Qt/Tools/CMake_64/share/cmake-3.24/Modules/Platform/WindowsPaths.cmake \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/CMakeLists.txt \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/altura.cpp \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/altura.h \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/balance.cpp \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/balance.h \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytree.cpp \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytree.h \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytreewidget.cpp \
@@ -442,12 +463,17 @@ BinaryTreeVisualizer_autogen/timestamp: \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.h \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/menu.cpp \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/menu.h \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/profundidad.cpp \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/profundidad.h \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/searchdialog.cpp \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/searchdialog.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.24.2/CMakeCXXCompiler.cmake \
   CMakeFiles/3.24.2/CMakeRCCompiler.cmake \
   CMakeFiles/3.24.2/CMakeSystem.cmake \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/altura.ui \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/balance.ui \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/mainwindow.ui \
   C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/menu.ui \
+  C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/profundidad.ui \
   C:/Qt/Tools/CMake_64/bin/cmake.exe

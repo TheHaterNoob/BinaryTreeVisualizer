@@ -44,9 +44,14 @@ public:
     QPushButton *pushButton;
     QPushButton *Guardar;
     QPushButton *openButton;
+    QPushButton *showRecorridosButton;
     QPushButton *limpiar;
     QLabel *label;
+    QPushButton *saveScreenshot;
     QFrame *frame_2;
+    QPushButton *pushButton_5;
+    QPushButton *pushButton_6;
+    QPushButton *pushButton_7;
     QMenuBar *menubar;
     QMenu *menuFile;
     QMenu *menuEdit;
@@ -59,7 +64,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1579, 1238);
+        MainWindow->resize(1591, 1106);
         actionYEP = new QAction(MainWindow);
         actionYEP->setObjectName("actionYEP");
         actionAbrir_Arbol = new QAction(MainWindow);
@@ -78,7 +83,7 @@ public:
         centralwidget->setObjectName("centralwidget");
         verticalLayoutWidget_2 = new QWidget(centralwidget);
         verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
-        verticalLayoutWidget_2->setGeometry(QRect(180, 40, 1361, 931));
+        verticalLayoutWidget_2->setGeometry(QRect(180, 40, 1221, 731));
         Visualizer = new QVBoxLayout(verticalLayoutWidget_2);
         Visualizer->setObjectName("Visualizer");
         Visualizer->setContentsMargins(0, 0, 0, 0);
@@ -92,7 +97,7 @@ public:
         frame->setFrameShadow(QFrame::Raised);
         verticalLayoutWidget = new QWidget(frame);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(10, 160, 123, 531));
+        verticalLayoutWidget->setGeometry(QRect(10, 160, 123, 431));
         Y = new QVBoxLayout(verticalLayoutWidget);
         Y->setObjectName("Y");
         Y->setContentsMargins(0, 0, 0, 0);
@@ -160,6 +165,15 @@ public:
 
         Y->addWidget(openButton);
 
+        showRecorridosButton = new QPushButton(verticalLayoutWidget);
+        showRecorridosButton->setObjectName("showRecorridosButton");
+        showRecorridosButton->setFont(font1);
+        showRecorridosButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background-color: rgb(119, 193, 75);\n"
+"}"));
+
+        Y->addWidget(showRecorridosButton);
+
         limpiar = new QPushButton(verticalLayoutWidget);
         limpiar->setObjectName("limpiar");
         limpiar->setFont(font1);
@@ -174,21 +188,53 @@ public:
         label->setGeometry(QRect(10, 30, 121, 121));
         label->setStyleSheet(QString::fromUtf8("image: url(:/otro - copia.png);\n"
 "border-color: rgb(240, 240, 240);"));
+        saveScreenshot = new QPushButton(frame);
+        saveScreenshot->setObjectName("saveScreenshot");
+        saveScreenshot->setGeometry(QRect(50, 590, 41, 31));
+        saveScreenshot->setStyleSheet(QString::fromUtf8("image: url(:/Downloads/1200px-Picture_icon_BLACK.svg.png);\n"
+"\n"
+"QPushButton {\n"
+"	background-color: rgb(119, 193, 75);\n"
+"}"));
         frame_2 = new QFrame(centralwidget);
         frame_2->setObjectName("frame_2");
-        frame_2->setGeometry(QRect(190, 50, 1341, 911));
+        frame_2->setGeometry(QRect(190, 50, 1201, 711));
         frame_2->setStyleSheet(QString::fromUtf8("QFrame{\n"
 " border: 2px solid black;\n"
 "}"));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
+        pushButton_5 = new QPushButton(centralwidget);
+        pushButton_5->setObjectName("pushButton_5");
+        pushButton_5->setGeometry(QRect(190, 780, 101, 24));
+        pushButton_5->setFont(font1);
+        pushButton_5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background-color: rgb(119, 193, 75);\n"
+"}"));
+        pushButton_6 = new QPushButton(centralwidget);
+        pushButton_6->setObjectName("pushButton_6");
+        pushButton_6->setGeometry(QRect(300, 780, 111, 24));
+        pushButton_6->setFont(font1);
+        pushButton_6->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background-color: rgb(119, 193, 75);\n"
+"}"));
+        pushButton_7 = new QPushButton(centralwidget);
+        pushButton_7->setObjectName("pushButton_7");
+        pushButton_7->setGeometry(QRect(420, 780, 111, 24));
+        pushButton_7->setFont(font1);
+        pushButton_7->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"	background-color: rgb(119, 193, 75);\n"
+"}"));
         MainWindow->setCentralWidget(centralwidget);
         frame->raise();
         verticalLayoutWidget_2->raise();
         frame_2->raise();
+        pushButton_5->raise();
+        pushButton_6->raise();
+        pushButton_7->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 1579, 21));
+        menubar->setGeometry(QRect(0, 0, 1591, 22));
         menuFile = new QMenu(menubar);
         menuFile->setObjectName("menuFile");
         menuEdit = new QMenu(menubar);
@@ -231,13 +277,18 @@ public:
         actionConvert_to_AVL->setText(QCoreApplication::translate("MainWindow", "Convert to AVL", nullptr));
         actionTwilight_Sparkle->setText(QCoreApplication::translate("MainWindow", "Twilight Sparkle", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Create Head", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Crear Nodo Hoja", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Eliminar Nodo", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Buscar Elemento", nullptr));
-        Guardar->setText(QCoreApplication::translate("MainWindow", "Guardar Arbol", nullptr));
-        openButton->setText(QCoreApplication::translate("MainWindow", "Abrir Arbol", nullptr));
-        limpiar->setText(QCoreApplication::translate("MainWindow", "Limpiar Pantalla", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Create Leaf Node", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Delete Node", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "Search Node", nullptr));
+        Guardar->setText(QCoreApplication::translate("MainWindow", "Save Tree", nullptr));
+        openButton->setText(QCoreApplication::translate("MainWindow", "Open Tree", nullptr));
+        showRecorridosButton->setText(QCoreApplication::translate("MainWindow", "Orders", nullptr));
+        limpiar->setText(QCoreApplication::translate("MainWindow", "Clean Screen", nullptr));
         label->setText(QString());
+        saveScreenshot->setText(QCoreApplication::translate("MainWindow", "F", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "ALTURA", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("MainWindow", "PROFUNDIDAD", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("MainWindow", "BALANCE", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
         menuEdit->setTitle(QCoreApplication::translate("MainWindow", "Edit", nullptr));
         menuOptions->setTitle(QCoreApplication::translate("MainWindow", "Options", nullptr));

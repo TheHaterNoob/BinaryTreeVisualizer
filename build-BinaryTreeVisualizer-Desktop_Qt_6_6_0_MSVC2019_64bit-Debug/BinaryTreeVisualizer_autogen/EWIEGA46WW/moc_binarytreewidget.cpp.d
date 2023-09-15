@@ -1,10 +1,15 @@
 C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_MSVC2019_64bit-Debug/BinaryTreeVisualizer_autogen/EWIEGA46WW/moc_binarytreewidget.cpp: C:/Users/alex1/Documents/LeProject/BinaryTreeVisualizer/binarytreewidget.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/QObject \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QPropertyAnimation \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QSequentialAnimationGroup \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/QTimeLine \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20functional.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20memory.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q20type_traits.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/q23utility.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qabstractanimation.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qalgorithms.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qanimationgroup.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qanystringview.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qarraydata.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qarraydataops.h \
@@ -31,6 +36,7 @@ C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_M
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdatastream.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qdebug.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qeasingcurve.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qflags.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qfloat16.h \
@@ -66,10 +72,12 @@ C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_M
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpair.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpoint.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qprocessordetection.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qpropertyanimation.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qrect.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qrefcount.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qscopedpointer.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qscopeguard.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qsequentialanimationgroup.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qset.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qshareddata.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qshareddata_impl.h \
@@ -97,6 +105,7 @@ C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_M
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtimeline.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtnoop.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtpreprocessorsupport.h \
@@ -109,6 +118,7 @@ C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_M
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qtypes.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qutf8stringview.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qvariant.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtCore/qvariantanimation.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qvarlengtharray.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtCore/qxptype_traits.h \
@@ -140,6 +150,7 @@ C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_M
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qtransform.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsItemAnimation \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsScene \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QGraphicsView \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/QMessageBox \
@@ -147,6 +158,7 @@ C:/Users/alex1/Documents/LeProject/build-BinaryTreeVisualizer-Desktop_Qt_6_6_0_M
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qdialog.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgraphicsitemanimation.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgraphicsscene.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qgraphicsview.h \
   C:/Qt/6.6.0/msvc2019_64/include/QtWidgets/qmessagebox.h \

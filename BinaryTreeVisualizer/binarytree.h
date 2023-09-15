@@ -3,7 +3,8 @@
 #include <QObject>
 #include <QPropertyAnimation>
 #include <QSequentialAnimationGroup>
-
+#include <QGraphicsScene>
+class BinaryTreeWidget;
 struct TreeNode {
     int data;
     int x;
@@ -38,15 +39,16 @@ public:
     TreeNode* deleteNodeNormal(TreeNode* currentNode, int value);
     void insertNodesFromUnorderedTree(TreeNode* unorderedNode);
     void traverseAndCollect(TreeNode* currentNode, std::vector<int>& values);
-    void buildBSTFromSortedValues(const std::vector<int>& values, int left, int right);
+    void buildBSTFromSortedValues(BinaryTreeWidget* widget, const std::vector<int>& values, int left, int right);
     TreeNode* deleteNodeDefault(int value);
     void loadFromFileNormal(const QString& filePath);
     void insertNodeAVL(int value);
     void convertToAVLTree();
     void traverseAndCollectAVL(TreeNode* currentNode, std::vector<int>& values);
-    void buildAVLTreeFromSortedValues(const std::vector<int>& values, int left, int right);
+    void buildAVLTreeFromSortedValues(BinaryTreeWidget* widget, const std::vector<int>& values, int left, int right);
     void loadFromFileAVL(const QString& filePath);
-
+    void animateConversionToAVLTree( BinaryTreeWidget* widget);
+    void animateInsertionFromUnorderedTree(BinaryTreeWidget* widget, TreeNode* unorderedNode);
     QPointF getCurrentNodePosition(TreeNode* node);
       TreeNode* createNode(int value);
 

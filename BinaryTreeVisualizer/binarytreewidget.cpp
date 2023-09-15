@@ -142,8 +142,6 @@ void BinaryTreeWidget::updateTree() {
 
     binaryTree.calculateNodePositionsNormal(binaryTree.getRoot(), 0, 600, 50);
     drawTree(scene, binaryTree.getRoot(), nullptr);
-
-
 }
 
 

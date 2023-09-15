@@ -20,16 +20,16 @@ public:
     void updateTreeUnicorn();
     BinaryTree binaryTree;
     QGraphicsView* view;
-
-
-
+    QGraphicsScene* scene;
+    void drawTree(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse);
+    TreeNode* root;
 void setRoot(TreeNode* root);
         QTimer *colorTimer;
 private:
-    TreeNode* root;
+
     void drawTreeUnicorn(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse);
-    void drawTree(QGraphicsScene* scene, TreeNode* node, QGraphicsEllipseItem* parentEllipse);
-    QGraphicsScene* scene;
+
+
 
 
 

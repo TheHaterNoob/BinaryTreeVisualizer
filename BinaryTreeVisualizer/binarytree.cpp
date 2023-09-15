@@ -3,8 +3,9 @@
 #include <fstream>
 #include <queue>
 #include <stack>
-
-
+#include "binarytreewidget.h"
+#include <QThread>
+#include <QCoreApplication>
 BinaryTree::BinaryTree() : root(nullptr) {}
 
 BinaryTree::~BinaryTree() {
@@ -411,7 +412,7 @@ void BinaryTree::insertNodesFromUnorderedTree(TreeNode* unorderedNode) {
 
         root = nullptr;
 
-        buildBSTFromSortedValues(values, 0, values.size() - 1);
+        //buildBSTFromSortedValues(values, 0, values.size() - 1);
 
     }
 }
@@ -424,7 +425,7 @@ void BinaryTree::traverseAndCollect(TreeNode* currentNode, std::vector<int>& val
     }
 }
 
-void BinaryTree::buildBSTFromSortedValues(const std::vector<int>& values, int left, int right) {
+void BinaryTree::buildBSTFromSortedValues(BinaryTreeWidget* widget, const std::vector<int>& values, int left, int right) {
     if (left > right) {
         return;
     }
@@ -432,8 +433,12 @@ void BinaryTree::buildBSTFromSortedValues(const std::vector<int>& values, int le
     int mid = left + (right - left) / 2;
     insert(values[mid]);
 
-    buildBSTFromSortedValues(values, left, mid - 1);
-    buildBSTFromSortedValues(values, mid + 1, right);
+    widget->updateTree();
+    QCoreApplication::processEvents();
+    QThread::msleep(500);
+
+    buildBSTFromSortedValues(widget, values, left, mid - 1);
+    buildBSTFromSortedValues(widget, values, mid + 1, right);
 }
 
 void BinaryTree::insertNodeAVL(int value) {
@@ -508,7 +513,7 @@ void BinaryTree::convertToAVLTree() {
 
     root = nullptr;
 
-    buildAVLTreeFromSortedValues(values, 0, values.size() - 1);
+    //buildAVLTreeFromSortedValues(values, 0, values.size() - 1);
 }
 
 void BinaryTree::traverseAndCollectAVL(TreeNode* currentNode, std::vector<int>& values) {
@@ -519,16 +524,43 @@ void BinaryTree::traverseAndCollectAVL(TreeNode* currentNode, std::vector<int>& 
     }
 }
 
-void BinaryTree::buildAVLTreeFromSortedValues(const std::vector<int>& values, int left, int right) {
+void BinaryTree::buildAVLTreeFromSortedValues(BinaryTreeWidget* widget ,const std::vector<int>& values, int left, int right) {
     if (left > right) {
         return;
     }
-
     int mid = left + (right - left) / 2;
     insertNodeAVL(values[mid]);
+    widget->updateTree();
+    QCoreApplication::processEvents();
+    QThread::msleep(500);
+   qDebug() << "HOLA";
+    buildAVLTreeFromSortedValues(widget, values, left, mid - 1);
+    buildAVLTreeFromSortedValues(widget, values, mid + 1, right);
 
-    buildAVLTreeFromSortedValues(values, left, mid - 1);
-    buildAVLTreeFromSortedValues(values, mid + 1, right);
+}
+void BinaryTree::animateConversionToAVLTree( BinaryTreeWidget* widget) {
+    std::vector<int> values;
+
+    traverseAndCollectAVL(root, values);
+
+    std::sort(values.begin(), values.end());
+
+    widget->clearTree();
+
+    buildAVLTreeFromSortedValues(widget, values, 0, values.size() - 1);
+}
+
+void BinaryTree::animateInsertionFromUnorderedTree( BinaryTreeWidget* widget, TreeNode* unorderedNode) {
+    if (unorderedNode) {
+        std::vector<int> values;
+
+        traverseAndCollect(unorderedNode, values);
+
+        std::sort(values.begin(), values.end());
+        widget->clearTree();
+
+        buildBSTFromSortedValues(widget, values, 0, values.size() - 1);
+    }
 }
 
 
